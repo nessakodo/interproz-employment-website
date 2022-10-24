@@ -5,7 +5,11 @@ class CandidatesController < ApplicationController
         render json: candidates, status: :ok
     end
 
-
+    def show
+        candidate = Candidate.find_by(id: params[:id])
+        render json: candidate, status: :accepted
+    end
+    
     def create
         candidate = Candidate.create!(candidate_params)
         if candidate.valid?
@@ -16,10 +20,6 @@ class CandidatesController < ApplicationController
         end
     end
 
-    def show
-        candidate = Candidate.find_by(id: params[:id])
-        render json: candidate, status: :accepted
-    end
 
     def update
         candidate = Candidate.find_by(id: params[:id])

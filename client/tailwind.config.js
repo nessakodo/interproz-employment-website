@@ -15,5 +15,12 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin')
+<<<<<<< HEAD
   ]
 }
+=======
+]
+}
+
+
+>>>>>>> origin/cassidy
