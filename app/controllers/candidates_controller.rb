@@ -9,7 +9,7 @@ class CandidatesController < ApplicationController
     def create
         candidate = Candidate.create!(candidate_params)
         if candidate.valid?
-            session[:user_id] = candidate.id 
+            session[:candidate_id] = candidate.id 
             render json: candidate, status: :created
         else
             render json: candidate.errors.full_messages, status: :unprocessable_entity
