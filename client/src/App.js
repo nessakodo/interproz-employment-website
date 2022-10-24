@@ -5,6 +5,7 @@ import './index.css';
 import NavBar from "./components/NavBar"
 import Signup from "./components/Signup"
 import Login from "./components/Login"
+import Home from "./components/Home"
 
 export default function App() {
 
@@ -52,6 +53,9 @@ export default function App() {
               setLoggedIn={setLoggedIn}
               visible={visible}
               setVisible={setVisible} />
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
     </Switch>
   </div>

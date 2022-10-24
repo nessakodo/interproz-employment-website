@@ -103,15 +103,11 @@ function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
                     </Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
-            <div class='flex flex-col items-center'>
-              
+            <div class='flex flex-col items-center'> 
                 <div className='absolute pt-20'>
-            
-                </div>
             </div>
-
-
-        </div >
+        </div>
+    </div >
     )
 }
 
