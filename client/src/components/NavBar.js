@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Navbar, Dropdown } from 'flowbite-react'
+import { Navbar, Dropdown, Card } from 'flowbite-react'
 import icon from "../assets/as-icon.png"
 import defaultpic from '../assets/profile-pic.webp'
+import homepage_pic from '../assets/homepage_pic.jpg'
 
 
 function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
@@ -101,6 +102,9 @@ function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
                     <Navbar.Link href="./clients">
                         Clients
                     </Navbar.Link>
+                    <Navbar.Link href="./opportunities">
+                        Opportunities
+                    </Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
             <div class='flex flex-col items-center'>
@@ -109,7 +113,15 @@ function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
             
                 </div>
             </div>
-
+            <div>
+                <img src={homepage_pic} alt="Picture Courtesy of Tiger Lily on Pexels" />
+                <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+                <div class="p-20 text-2xl text-black bg-gray-300 bg-opacity-50 fixed h-100 w-20 inset-y-0 left-0">
+                    EXCEL PERSONNEL <br /> We specialize in Administration, Forklift, Packaging, Quality Control, Shipping & Receiving and Warehouse talent. <br />Begin your search 
+                </div>
+            </header>
+            </div>
+    
 
         </div >
     )
