@@ -6,7 +6,7 @@ import defaultpic from '../assets/profile-pic.webp'
 import homepage_pic from '../assets/homepage_pic.jpg'
 
 
-function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
+function NavBar({ loggedIn, setCurrentCandidate, setLoggedIn, setVisible }) {
 
     const history = useHistory()
 

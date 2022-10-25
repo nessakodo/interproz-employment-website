@@ -2,9 +2,16 @@ import React, {useState, useEffect} from "react"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './index.css';
 
+
+
 import NavBar from "./components/NavBar"
 import Signup from "./components/Signup"
 import Login from "./components/Login"
+import About from "./components/About"
+import Candidates from "./components/Candidates"
+import Clients from "./components/Clients"
+import Opportunities from "./components/Opportunities"
+
 
 export default function App() {
 
@@ -40,6 +47,26 @@ export default function App() {
         />
   <div className="app">
     <Switch>
+      <Route exact path="/">
+       <NavBar />
+      </Route>
+          
+      <Route path="/About">
+        <About />
+      </Route>
+  
+      <Route path="/Candidates">
+        <Candidates />
+      </Route>
+
+      <Route path="/Clients">
+          <Clients />
+      </Route>
+
+      <Route path="/Opportunities">
+          <Opportunities />
+      </Route>
+
       <Route path="/signup">
         <Signup
           setCurrentCandidate={setCurrentCandidate}
