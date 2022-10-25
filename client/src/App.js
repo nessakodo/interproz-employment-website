@@ -10,6 +10,7 @@ import Login from "./components/Login"
 import About from "./components/About"
 import Candidates from "./components/Candidates"
 import Clients from "./components/Clients"
+import Home from "./components/Home"
 import Opportunities from "./components/Opportunities"
 
 
@@ -48,7 +49,7 @@ export default function App() {
   <div className="app">
     <Switch>
       <Route exact path="/">
-       <NavBar />
+       <Home />
       </Route>
           
       <Route path="/About">
