@@ -31,7 +31,7 @@ function Signup({ setCurrentCandidate, setLoggedIn }) {
                 res.json().then((formData) => {
                     setCurrentCandidate(formData);
                     setLoggedIn(formData)
-                    // history.push('/profile')
+                    history.push('/')
 
                 });
             } else {

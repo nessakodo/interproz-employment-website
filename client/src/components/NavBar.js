@@ -5,7 +5,7 @@ import icon from "../assets/as-icon.png"
 import defaultpic from '../assets/profile-pic.webp'
 
 
-function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
+function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, setVisible,  setProfileCard,} ) {
 
     const history = useHistory()
 
@@ -14,7 +14,16 @@ function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
         setVisible(true)
     }
 
-   
+
+    function handleProfDropClick(e) {
+        const click = e.target.textContent
+        if (click === "Profile") {
+            setProfileCard(true)
+          
+        } else  {
+            setProfileCard(false)
+        }}
+
     function onSignOut() {
         fetch('/logout', { method: "DELETE" })
             .then(res => {
@@ -26,7 +35,7 @@ function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
             })
     }
 
-    
+
     return (
         <div>
             <Navbar
@@ -47,17 +56,18 @@ function NavBar({loggedIn, setCurrentCandidate, setLoggedIn, setVisible} ) {
                 {loggedIn ?
                     (<div className="flex md:order-2">
                         <Dropdown
-                            arrowIcon={false}
                             inline={true}
-                           
                         >
                             <Dropdown.Header>
                                 <span className="block text-sm">
                                     Signed in as:
                                 </span>
-                                {/* <span className="block truncate text-sm font-bold">
+                                <span className="block truncate text-sm font-bold">
                                     {currentCandidate.name}
-                                </span> */}
+                                </span>
+                                <Dropdown.Item onClick={handleProfDropClick}>
+                                Profile
+                                </Dropdown.Item>
                             </Dropdown.Header>
                             <Dropdown.Item onClick={(onSignOut)}>
                                 Sign out

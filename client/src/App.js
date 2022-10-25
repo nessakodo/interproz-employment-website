@@ -2,17 +2,23 @@ import React, {useState, useEffect} from "react"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './index.css';
 
+// Page imports
 import NavBar from "./components/NavBar"
 import Signup from "./components/Signup"
 import Login from "./components/Login"
 import Home from "./components/Home"
+import Profile from "./components/Profile"
 
 export default function App() {
 
+  // states declared
   const [loggedIn, setLoggedIn] = useState(false)
   const [currentCandidate, setCurrentCandidate] = useState({})
   const [visible, setVisible] = useState(false)
+  const [profileCard, setProfileCard] = useState(true)
 
+
+  // log in fetch
   useEffect(() => {
     fetch(`/logged_in`)
       .then(res => {
@@ -20,8 +26,8 @@ export default function App() {
           setLoggedIn(true)
           res.json()
             .then(
-              user => {
-                setCurrentCandidate(user)
+              candidate => {
+                setCurrentCandidate(candidate)
               }
             )
         }
@@ -29,13 +35,14 @@ export default function App() {
       )
   }, [loggedIn]);
 
+  // routes from app using browser router declared
   return (
   <BrowserRouter>
   <NavBar
       loggedIn={loggedIn}
-      currentUser={currentCandidate}
+      currentCandidate={currentCandidate}
       setLoggedIn={setLoggedIn}
-      setCurrentUser={setCurrentCandidate}
+      setCurrentCandidate={setCurrentCandidate}
       visible={visible}
       setVisible={setVisible}
         />
@@ -57,6 +64,15 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          {currentCandidate &&
+            <Route exact path="/profile">
+              <Profile
+                currentCandidate={currentCandidate}
+                setCurrentCandidate={setCurrentCandidate}
+                setProfileCard={setProfileCard}
+             />
+            </Route>
+          }
     </Switch>
   </div>
 </BrowserRouter>

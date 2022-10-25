@@ -30,7 +30,7 @@ function Login({ visible, setVisible, setCurrentCandidate, setLoggedIn }) {
                 res.json().then((formData) => {
                     setCurrentCandidate(formData);
                     setLoggedIn(formData)
-                    history.push('/profile')
+                    history.push('/')
                 });
             } else {
                 res.json().then((data) => {
@@ -40,6 +40,8 @@ function Login({ visible, setVisible, setCurrentCandidate, setLoggedIn }) {
         });
     }
 
+
+   
 
     return (
         <React.Fragment>
