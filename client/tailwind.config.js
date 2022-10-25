@@ -6,6 +6,13 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    colors: {
+      'grey': "rgba(255, 255, 255, 0.104)",
+      'navyish': '#0D3360',
+      'gold': '#C79853',
+      'yellow': '#D9AC59',
+      'red': '#D93636',
+    },
     extend: {
       // animation: {
       //   // Bounces 5 times 1s equals 5 seconds
