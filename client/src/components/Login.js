@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+
+// react router flowbite imports
 import { Modal, Label, TextInput, Checkbox, Button } from 'flowbite-react'
 
+// setting form visible on login form
 function Login({ visible, setVisible, setCurrentCandidate, setLoggedIn }) {
-    const [errors, setErrors] = useState([]);
+    
+    // use history helps us to push the home page status
     const history = useHistory()
+    const [errors, setErrors] = useState([]);
     const [formData, setFormData] = useState({
         email: "",
         password: ""
@@ -30,6 +35,8 @@ function Login({ visible, setVisible, setCurrentCandidate, setLoggedIn }) {
                 res.json().then((formData) => {
                     setCurrentCandidate(formData);
                     setLoggedIn(formData)
+
+                    // home page pushed after login
                     history.push('/')
                 });
             } else {

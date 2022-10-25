@@ -19,6 +19,8 @@ function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, s
         const click = e.target.textContent
         if (click === "Profile") {
             setProfileCard(true)
+            history.push('/profile')
+
           
         } else  {
             setProfileCard(false)
