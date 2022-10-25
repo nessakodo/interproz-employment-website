@@ -46,17 +46,17 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
 
     return (
         <div>
-            <Navbar
+            <Navbar class="bg-grey mb-5 mt-5"
                 fluid={true}
                 rounded={true}
             >
                 <Navbar.Brand href="/">
                     <img
                         src={icon}
-                        className="mr-3 h-6 sm:h-9"
+                        className="ml-5 mr-5 h-6 sm:h-9"
                         alt="Excel Personnel"
                     />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                    <span className=" self-center whitespace-nowrap text-xl font-semibold dark:text-navyish">
                         Excel Personnel
                     </span>
                 </Navbar.Brand>
@@ -68,7 +68,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                             label={currentCandidate ? <img class='object-cover w-12 h-12 rounded-full border-2 border-gray-400' src={profPhoto.image_url} alt='' /> :
                             null}
                         >
-                            <Dropdown.Header>
+                            <Dropdown.Header >
                                 <span className="block text-sm">
                                     Signed in as:
                                 </span>
@@ -111,7 +111,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                     </div>)
                 }
 
-                <Navbar.Collapse>
+                <Navbar.Collapse >
                     <Navbar.Link
                         href="/"
                         active={true}
