@@ -7,10 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      animation: {
-        // Bounces 5 times 1s equals 5 seconds
-        'bounce-short': 'bounce 1s ease-in-out 9'
-      }
+      // animation: {
+      //   // Bounces 5 times 1s equals 5 seconds
+      //   'bounce-short': 'bounce 1s ease-in-out 9'
+      // }
     },
   },
   plugins: [

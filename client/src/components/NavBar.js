@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Navbar, Dropdown, Card } from 'flowbite-react'
+import { Navbar, Dropdown } from 'flowbite-react'
 import icon from "../assets/as-icon.png"
 import defaultpic from '../assets/profile-pic.webp'
 
