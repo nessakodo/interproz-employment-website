@@ -5,7 +5,7 @@ import icon from "../assets/as-icon.png"
 import defaultpic from '../assets/profile-pic.webp'
 
 
-function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, setVisible,  setProfileCard,} ) {
+function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, setVisible,  setProfileCard,} ) {
 
     const history = useHistory()
 
@@ -17,14 +17,20 @@ function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, s
 
     function handleProfDropClick(e) {
         const click = e.target.textContent
-        if (click === "Profile") {
+        if (click === "Account") {
             setProfileCard(true)
-            history.push('/profile')
-
-          
+            setJobsComp(false)
+        }
+        else if (click === "My Jobs") {
+            setProfileCard(false)
+            setJobsComp(true)
         } else  {
             setProfileCard(false)
-        }}
+            setJobsComp(false)
+        }
+        history.push('./profile')
+
+    }
 
     function onSignOut() {
         fetch('/logout', { method: "DELETE" })
@@ -59,6 +65,8 @@ function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, s
                     (<div className="flex md:order-2">
                         <Dropdown
                             inline={true}
+                            label={currentCandidate ? <img class='object-cover w-12 h-12 rounded-full border-2 border-gray-400' src={profPhoto.image_url} alt='' /> :
+                            null}
                         >
                             <Dropdown.Header>
                                 <span className="block text-sm">
@@ -67,12 +75,18 @@ function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, s
                                 <span className="block truncate text-sm font-bold">
                                     {currentCandidate.name}
                                 </span>
+                                </Dropdown.Header>
+                               
                                 <Dropdown.Item onClick={handleProfDropClick}>
-                                Profile
+                                    Account
                                 </Dropdown.Item>
-                            </Dropdown.Header>
-                            <Dropdown.Item onClick={(onSignOut)}>
-                                Sign out
+                                <Dropdown.Item onClick={handleProfDropClick}>
+                                    My Jobs
+                                </Dropdown.Item>
+                            
+
+                            <Dropdown.Item onClick={(onSignOut)} >
+                            <strong>Sign out</strong>
                             </Dropdown.Item>
                         </Dropdown>
                         <Navbar.Toggle />
@@ -113,6 +127,9 @@ function NavBar({loggedIn, setCurrentCandidate, currentCandidate, setLoggedIn, s
                     <Navbar.Link href="./clients">
                         Clients
                     </Navbar.Link>
+                    {/* <Navbar.Link href="./jobs">
+                        Jobs
+                    </Navbar.Link> */}
                 </Navbar.Collapse>
             </Navbar>
             <div class='flex flex-col items-center'> 

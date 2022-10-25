@@ -8,6 +8,9 @@ import Signup from "./components/Signup"
 import Login from "./components/Login"
 import Home from "./components/Home"
 import Profile from "./components/Profile"
+import Clients from "./components/Clients"
+import Candidates from "./components/Candidates"
+import Jobs from "./components/Jobs"
 
 export default function App() {
 
@@ -16,6 +19,10 @@ export default function App() {
   const [currentCandidate, setCurrentCandidate] = useState({})
   const [visible, setVisible] = useState(false)
   const [profileCard, setProfileCard] = useState(true)
+  const [profPhoto, setProfPhoto] = useState([])
+  const [jobsComp, setJobsComp] = useState(false)
+  const [myJobs, setMyJobs] = useState([])
+  const [jobs, setJobs] = useState([])
 
 
   // log in fetch
@@ -28,12 +35,55 @@ export default function App() {
             .then(
               candidate => {
                 setCurrentCandidate(candidate)
+                setMyJobs(candidate.jobs)
+                fetchProfPhoto(candidate.id)
               }
             )
         }
       }
       )
   }, [loggedIn]);
+
+  function fetchProfPhoto(id) {
+    fetch(`/current_candidate_photos?id=${id}`)
+      .then(r => r.json())
+      .then(photosArr => {
+        setProfPhoto(photosArr)
+      })
+  }
+
+  useEffect(() => {
+    fetch("/jobs")
+      .then(r => r.json())
+      .then(jobsArr => setJobs(jobsArr))
+  }, [])
+
+  function onApply(appliedJob) {
+    const apply = {
+      candidate_id: currentCandidate.id,
+      job_id: appliedJob.id,
+      applied: true
+    }
+    fetch('/applied_jobs', {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(apply),
+    })
+      .then((res) => res.json())
+      .then(setMyJobs([...myJobs, appliedJob]))
+
+  }
+
+  
+  function onRemove(removedJob) {
+    fetch(`/remove?job=${removedJob.id}&user=${currentCandidate.id}`, { method: "DELETE" })
+      .then(res => {
+        if (res.ok) {
+          setMyJobs(myJobs.filter(job => job.id !== removedJob.id))
+        }
+      })
+
+  }
 
   // routes from app using browser router declared
   return (
@@ -43,8 +93,11 @@ export default function App() {
       currentCandidate={currentCandidate}
       setLoggedIn={setLoggedIn}
       setCurrentCandidate={setCurrentCandidate}
+      setProfileCard={setProfileCard}
       visible={visible}
       setVisible={setVisible}
+      profPhoto={profPhoto}
+      setJobsComp={setJobsComp}
         />
   <div className="app">
     <Switch>
@@ -64,12 +117,26 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route exact path="/clients">
+            <Clients />
+          </Route>
+          <Route exact path="/candidates">
+            <Candidates
+            currentCandidate={currentCandidate}
+            jobs={jobs}
+            loggedIn={loggedIn}
+            onApply={onApply}/>
+          </Route>
           {currentCandidate &&
             <Route exact path="/profile">
               <Profile
                 currentCandidate={currentCandidate}
                 setCurrentCandidate={setCurrentCandidate}
                 setProfileCard={setProfileCard}
+                profPhoto={profPhoto}
+                setJobsComp={setJobsComp}
+                myJobs={myJobs}
+                onRemove={onRemove}
              />
             </Route>
           }

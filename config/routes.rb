@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :jobs
   resources :interviews
   resources :sessions
+  resources :profile_photos
+  resources :applied_jobs
 
    # Authenication Routes
    post '/signup', to: 'candidates#create'
@@ -11,7 +13,6 @@ Rails.application.routes.draw do
    get "/logged_in", to: "sessions#logged_in"
 
 
-     # route to test your configuration
-  get '/hello', to: 'application#hello_world'
+  get "current_candidate_photos", to: "profile_photos#current_candidate_photos"
  
 end
