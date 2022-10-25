@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import JobCard from './JobCard'
-import { Dropdown } from 'flowbite-react'
 
 function Jobs({ jobs, loggedIn, currentCandidate, onApply }) {
     const [hideAlert, setHideAlert] = useState("hidden")

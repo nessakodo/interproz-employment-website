@@ -10,7 +10,18 @@ import Home from "./components/Home"
 import Profile from "./components/Profile"
 import Clients from "./components/Clients"
 import Candidates from "./components/Candidates"
-import Jobs from "./components/Jobs"
+// import Jobs from "./components/Jobs"
+
+
+// import NavBar from "./components/NavBar"
+// import Signup from "./components/Signup"
+// import Login from "./components/Login"
+import About from "./components/About"
+// import Candidates from "./components/Candidates"
+// import Clients from "./components/Clients"
+// import Home from "./components/Home"
+// import Opportunities from "./components/Opportunities"
+
 
 export default function App() {
 
@@ -101,6 +112,30 @@ export default function App() {
         />
   <div className="app">
     <Switch>
+      <Route exact path="/">
+       <Home />
+      </Route>
+          
+      <Route path="/about">
+        <About />
+      </Route>
+  
+      <Route path="/clients">
+          <Clients />
+      </Route>
+
+
+      <Route exact path="/candidates">
+            <Candidates
+            currentCandidate={currentCandidate}
+            jobs={jobs}
+            loggedIn={loggedIn}
+            onApply={onApply}/>
+          </Route>
+      {/* <Route path="/Opportunities">
+          <Opportunities />
+      </Route> */}
+
       <Route path="/signup">
         <Signup
           setCurrentCandidate={setCurrentCandidate}
@@ -117,16 +152,7 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/clients">
-            <Clients />
-          </Route>
-          <Route exact path="/candidates">
-            <Candidates
-            currentCandidate={currentCandidate}
-            jobs={jobs}
-            loggedIn={loggedIn}
-            onApply={onApply}/>
-          </Route>
+      
           {currentCandidate &&
             <Route exact path="/profile">
               <Profile

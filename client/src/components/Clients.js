@@ -1,7 +1,14 @@
 import React from "react"
 
-export default function Clients() {
+export default function Clients () {
+
     return (
-        <h2>clients</h2>
+        <>
+            <div>
+            EXCEL PERSONNEL <br /> 
+            Staffing Improved<br /> 
+            </div>
+        </>
     )
-}
+
+};

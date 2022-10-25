@@ -130,6 +130,9 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                     {/* <Navbar.Link href="./jobs">
                         Jobs
                     </Navbar.Link> */}
+                    {/* <Navbar.Link href="./opportunities">
+                        Opportunities
+                    </Navbar.Link> */}
                 </Navbar.Collapse>
             </Navbar>
             <div class='flex flex-col items-center'> 
@@ -137,6 +140,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
             </div>
         </div>
     </div >
+
     )
 }
 
