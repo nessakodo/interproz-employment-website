@@ -38,8 +38,6 @@ export default function AboutPage () {
         </Tabs.Group>
 
         <h1>Excel Milestones</h1>
-        <ol class = "relative border-l border-gray-200 dark:border-gray-700 left-6">
-            <ul class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                 <Timeline>
                     <Timeline.Item>
                         <Timeline.Point />
@@ -119,9 +117,7 @@ export default function AboutPage () {
                         </Timeline.Content>
                     </Timeline.Item>
                 </Timeline>
-            </ul>
-        </ol>
-        
+
         </>
     )
 
