@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Modal, Tooltip } from 'flowbite-react'
 
-
 function ProfileCard({ currentCandidate, setCurrentCandidate, profPhoto, setProfPhoto}) {
     const [showEdit, setShowEdit] = useState(false)
     const [formData, setFormData] = useState({})
