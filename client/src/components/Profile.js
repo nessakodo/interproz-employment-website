@@ -1,22 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ProfileCard from './ProfileCard'
 import MyJobs from "./MyJobs"
 
 export default function Profile({ onRemove, setJobsComp, jobsComp, profileCard, profPhoto, currentCandidate, setCurrentCandidate, setProfileCard, myJobs }) {
 
-    function handleClick(e) {
-        const state = e.target.name
-        if (state === "profileCard") {
-            setProfileCard(true)
-            setJobsComp(false)
-        } else if (state === "jobsComp") {
-            setProfileCard(false)
-            setJobsComp(true)
-        } else {
-            setProfileCard(false)
-            setJobsComp(false)
-        }
-    }
+const [isClicked, setIsClicked] = useState(false)
 
     return (
         <div class='flex justify-center'>
@@ -27,18 +15,18 @@ export default function Profile({ onRemove, setJobsComp, jobsComp, profileCard, 
                 {/* MyJobs Tabs */}
                 <ul class="flex flex-wrap mb-5 mt-5 text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
                     <li class="mr-2">
-                        <a href="#" onClick={handleClick} name="profileCard" aria-current="page" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Account</a>
+                        <a href="#" onClick={() => setIsClicked(!isClicked)} name="profileCard" aria-current="page" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Account</a>
                     </li>
                     <li class="mr-2">
-                        <a href="#" onClick={handleClick} name="jobsComp" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">My Jobs</a>
+                        <a href="#" onClick={() => setIsClicked(!isClicked)} name="jobsComp" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">My Jobs</a>
                     </li>
                 </ul>
 
-                {jobsComp = true  ? 
+                { isClicked ? 
                 <MyJobs currentCandidate={currentCandidate} myJobs={myJobs} onRemove={onRemove} />
                 :
                 <ProfileCard currentCandidate={currentCandidate} setCurrentCandidate={setCurrentCandidate} profPhoto={profPhoto} />
-                }
+                } 
 
           
 
