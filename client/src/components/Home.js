@@ -109,8 +109,8 @@ export default function Home () {
                     </div>    
                 </section>
 
-        <div class="grid-container">
-            <div class="grid-child1">
+        <div class="grid-container2">
+            <div class="grid-child3">
                         <Card class="bg-gray-200 ml-0 h-80 ">
                                 <h5 className="text-2xl font-bold tracking-tight ">
                                     Schedule an Interview
@@ -125,7 +125,7 @@ export default function Home () {
                             </Card>
             </div>
 
-            <div class="grid-child2">
+            <div class="grid-child4">
                     <Card class="bg-gray-100 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Submit your Resume
@@ -140,8 +140,8 @@ export default function Home () {
                     </Card>
             </div>
 
-            <div class="grid-child1">
-                        <Card class="bg-gray-200 ml-0 h-80 ">
+            <div class="grid-child5">
+                        <Card class="bg-gray-100 ml-0 h-80 ">
                                 <h5 className="text-2xl font-bold tracking-tight ">
                                     Job Opportunities
                                 </h5>
@@ -155,8 +155,8 @@ export default function Home () {
                             </Card>
             </div>
 
-            <div class="grid-child2">
-                    <Card class="bg-gray-100 mr-0 h-80">
+            <div class="grid-child6">
+                    <Card class="bg-gray-200 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Who We Are
                         </h5>
