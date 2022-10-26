@@ -29,13 +29,17 @@ bg-hero {
 
 .skill-icons {
   margin: 2em auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
   filter: grayscale(1);
+  size-adjust: 50%;
+  grid-template-columns: .1fr .1fr .1fr .1fr .1fr .1fr;
+  grid-gap: 100px;
+  
 }
 
 .skill-icons>img {
@@ -44,4 +48,7 @@ bg-hero {
   padding: 0 1em;
   height: 20 px;
   margin: 0 1% 1em 1%;
+  object-fit: cover;
+  width: 1.5in;
+  height: 1.5in;
 }

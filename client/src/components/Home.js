@@ -5,24 +5,24 @@ import ball from '../assets/logos/ball.png';
 import fresca from '../assets/logos/fresca.png';
 import coors from '../assets/logos/coors.png';
 import cardinal from '../assets/logos/cardinal.png';
-// import acme from '../assets/logos/acme.png';
-// import aspen from '../assets/logos/aspen.png';
-// import bigo from '../assets/logos/bigo.png';
-// import bmc from '../assets/logos/bmc.png';
-// import brownss from '../assets/logos/brownss.png';
-// import cintas from '../assets/logos/cintas.png';
-// import dmco from '../assets/logos/dmco.png';
-// import empire from '../assets/logos/empire.png';
-// import forterra from '../assets/logos/forterra.png';
-// import jepp from '../assets/logos/jepp.png';
-// import liva from '../assets/logos/liva.png';
-// import metal from '../assets/logos/metal.png';
-// import napa from '../assets/logos/napa.png';
-// import sorin from '../assets/logos/sorin.png';
-// import sund from '../assets/logos/sund.png';
-// import tms from '../assets/logos/tms.png';
-// import trelle from '../assets/logos/trelle.png';
-// import uec from '../assets/logos/uec.png';
+import acme from '../assets/logos/acme.png';
+import aspen from '../assets/logos/aspen.png';
+import bigo from '../assets/logos/bigo.png';
+import bmc from '../assets/logos/bmc.png';
+import brownss from '../assets/logos/brownss.png';
+import cintas from '../assets/logos/cintas.png';
+import dmco from '../assets/logos/dmco.png';
+import empire from '../assets/logos/empire.png';
+import forterra from '../assets/logos/forterra.png';
+import jepp from '../assets/logos/jepp.png';
+import liva from '../assets/logos/liva.png';
+import metal from '../assets/logos/metal.png';
+import napa from '../assets/logos/napa.png';
+import sorin from '../assets/logos/sorin.png';
+import sund from '../assets/logos/sund.png';
+import tms from '../assets/logos/tms.png';
+import trelle from '../assets/logos/trelle.png';
+import uec from '../assets/logos/uec.png';
 
 
 export default function Home () {
@@ -90,12 +90,35 @@ export default function Home () {
                             </Button>
                     </Card>
                 <section>
+                    <div class="p-20 text-7xl text-black ml-0 mr-10">
+                    <h1>Companies who chose us</h1> 
+                    </div>
                     <div class="skill-icons">
                         <div><img src={wholefoods} alt="wholefoods logo"/></div>
                         <div><img src={ball} alt="ball logo"/></div>
                         <div><img src={fresca} alt="fresca logo"/></div>
                         <div><img src={coors} alt="coors logo"/></div>
                         <div><img src={cardinal} alt="cardinal logo"/></div>
+                        <div><img src={acme} alt="acme logo"/></div>
+                        <div><img src={aspen} alt="aspen logo"/></div>
+                        <div><img src={bigo} alt="bigo logo"/></div>
+                        <div><img src={bmc} alt="bmc logo"/></div>
+                        <div><img src={brownss} alt="brownss logo"/></div>
+                        <div><img src={cintas} alt="cintas logo"/></div>
+                        <div><img src={dmco} alt="dmco logo"/></div>
+                        <div><img src={empire} alt="empire logo"/></div>
+                        <div><img src={forterra} alt="forterra logo"/></div>
+                        <div><img src={jepp} alt="jepp logo"/></div>
+                        <div><img src={liva} alt="liva logo"/></div>
+                        <div><img src={metal} alt="metal logo"/></div>
+                        <div><img src={napa} alt="napa logo"/></div>
+                        <div><img src={sorin} alt="sorin logo"/></div>
+                        <div><img src={sund} alt="sund logo"/></div>
+                        <div><img src={tms} alt="tms logo"/></div>
+                        <div><img src={trelle} alt="trelle logo"/></div>
+                        <div><img src={uec} alt="uec logo"/></div>
+
+
                     </div>    
                 </section>
         </div>
