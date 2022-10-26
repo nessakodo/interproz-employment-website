@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom'
 
 
-import { Card, Button } from 'flowbite-react';
+import { Card, Button, Footer } from 'flowbite-react';
 import wholefoods from '../assets/logos/wholefoods.png';
 import ball from '../assets/logos/ball.png';
 import fresca from '../assets/logos/fresca.png';
@@ -26,6 +26,7 @@ import sund from '../assets/logos/sund.png';
 import tms from '../assets/logos/tms.png';
 import trelle from '../assets/logos/trelle.png';
 import uec from '../assets/logos/uec.png';
+import map_footer from '../assets/map_footer.jpeg';
 
 
 export default function Home () {
@@ -193,7 +194,39 @@ export default function Home () {
                 </div>
         </div>
   
-
+        <Footer container={true}>
+            <div className="w-full">
+                <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+                <div>
+                <img src={map_footer} class="mr-3 h-max pr-16" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Conveniently located at I-25 and Thornton Pkwy, <br />our office is located just off of Grant St.</span>
+                </div>
+                    <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:gap-6">
+                        <div>
+                        <Footer.Title title="Denver / Thornton Office" />
+                        <Footer.LinkGroup col={true}>
+                            9351 Grant St.<br />Suite 570<br />Thornton, CO 80229<br />Phone: (303)-427-4600<br /> Fax: (303)427-4147
+                        </Footer.LinkGroup>
+                        </div>
+                        <div>
+                        <Footer.Title title="Corporate / Payroll Office" />
+                        <Footer.LinkGroup col={true}>
+                            10111 Inverness Main St.<br />Englewood, CO 80112<br />Phone: (303)-805-2300<br /> Fax: (303)805-2400
+                        </Footer.LinkGroup>
+                        </div>
+                  
+                    </div>
+                </div>
+                <Footer.Divider />
+                    <div className="w-full sm:flex sm:items-center sm:justify-between">
+                    <Footer.Copyright
+                        href="#"
+                        by="Flowbite™"
+                        year={2022}/>
+        
+                </div>
+            </div>
+        </Footer>
 
 
   
