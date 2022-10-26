@@ -29,7 +29,7 @@ export default function Home () {
 
     return (
         <>
-        <div class="bg-hero bg-contain bg-no-repeat">
+        <div class="bg-hero bg-cover bg-no-repeat">
                 <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
                     <div class="p-20 text-7xl text-black bg-gray-300 bg-opacity-50 ml-0 mr-10">
                         EXCEL PERSONNEL <br /> 
@@ -41,32 +41,37 @@ export default function Home () {
                         </div>
                     </div> 
                 </header>
+        </div>
 
-                <Card class="bg-gray-200 ml-0 mr-96 h-96 w-96 ">
-                        <h5 className="text-2xl font-bold tracking-tight ">
-                            Candidates
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-800">
-                            Excel Personnel has been providing expert recruiting services in Denver, CO for over three decades. We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed.
-                        </p>
-                            <Button>
-                                Read more
-                                <svg
-                                className="ml-2 -mr-1 h-4 w-4"
-                                fill="bg-slate-600"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
-                            </Button>
-                    </Card>
+        <div class="grid-container">
+            <div class="grid-child1">
+                        <Card class="bg-gray-200 ml-0 h-80 ">
+                                <h5 className="text-2xl font-bold tracking-tight ">
+                                    Candidates
+                                </h5>
+                                <p className="font-normal text-gray-700 dark:text-gray-800">
+                                    Excel Personnel has been providing expert recruiting services in Denver, CO for over three decades. We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed.
+                                </p>
+                                    <Button>
+                                        Read more
+                                        <svg
+                                        className="ml-2 -mr-1 h-4 w-4"
+                                        fill="bg-slate-600"
+                                        viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </Button>
+                            </Card>
+                    </div>
 
-                    <Card class="bg-gray-100 mr-0 ml-96 h-96 w-96">
+            <div class="grid-child2">
+                    <Card class="bg-gray-100 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Clients
                         </h5>
@@ -89,9 +94,12 @@ export default function Home () {
                                 </svg>
                             </Button>
                     </Card>
+                </div>
+        </div>
+
                 <section>
                     <div>
-                        <br />
+                        <br /> <br /> <br /> <br /> <br />
                         <h1>Companies who chose us</h1> 
                         <br />
                     </div>
@@ -123,7 +131,7 @@ export default function Home () {
 
                     </div>    
                 </section>
-        </div>
+  
 
 
 
