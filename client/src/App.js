@@ -11,6 +11,7 @@ import Profile from "./components/Profile"
 import Clients from "./components/Clients"
 import Candidates from "./components/Candidates"
 import Interview from "./components/Interview"
+import Resume from "./components/Resume"
 // import Jobs from "./components/Jobs"
 
 
@@ -161,6 +162,9 @@ export default function App() {
           </Route>
           <Route exact path="/interview">
             <Interview />
+          </Route>
+          <Route exact path="/resume">
+            <Resume />
           </Route>
           {currentCandidate &&
             <Route exact path="/profile">
