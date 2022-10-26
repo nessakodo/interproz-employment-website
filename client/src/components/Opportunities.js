@@ -1,10 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import Jobs from "./Jobs"
 
 
-export default function Opportunities () {
+export default function Opportunities ({currentCandidate, jobs, setJobs, loggedIn, onApply}) {
 
-    const [jobs, setJobs] = useState([])
 
     useEffect( () => {
         fetch(`http://localhost:3000/jobs`)
@@ -14,8 +14,15 @@ export default function Opportunities () {
 
     return (
         <div>
-            This is the opportunities page. 
+            
+            <Jobs
+        currentCandidate={currentCandidate}
+        jobs={jobs}
+        loggedIn={loggedIn}
+        onApply={onApply} />
         </div>
+      
+        
     )
 
 };

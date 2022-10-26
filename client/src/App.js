@@ -12,17 +12,8 @@ import Clients from "./components/Clients"
 import Candidates from "./components/Candidates"
 import Interview from "./components/Interview"
 import Resume from "./components/Resume"
-// import Jobs from "./components/Jobs"
-
-
-// import NavBar from "./components/NavBar"
-// import Signup from "./components/Signup"
-// import Login from "./components/Login"
 import About from "./components/About"
-// import Candidates from "./components/Candidates"
-// import Clients from "./components/Clients"
-// import Home from "./components/Home"
-// import Opportunities from "./components/Opportunities"
+import Opportunities from "./components/Opportunities"
 
 
 export default function App() {
@@ -134,15 +125,15 @@ export default function App() {
 
 
       <Route exact path="/candidates">
-            <Candidates
-            currentCandidate={currentCandidate}
-            jobs={jobs}
-            loggedIn={loggedIn}
-            onApply={onApply}/>
+            <Candidates/>
           </Route>
-      {/* <Route path="/Opportunities">
-          <Opportunities />
-      </Route> */}
+      <Route path="/Opportunities">
+          <Opportunities 
+          currentCandidate={currentCandidate}
+          jobs={jobs}
+          loggedIn={loggedIn}
+          onApply={onApply}/>
+      </Route>
 
       <Route path="/signup">
         <Signup

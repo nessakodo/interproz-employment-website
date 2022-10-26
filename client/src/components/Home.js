@@ -39,9 +39,15 @@ export default function Home () {
     function onResumeClick() {
         history.push('/resume')
     }
+
     function onOpportunitiesClick() {
-    history.push('/candidates')
+    history.push('/opportunities')
     }
+
+    function onAboutClick() {
+        history.push('/about')
+        }
+    
 
     return (
         <>
@@ -179,7 +185,7 @@ export default function Home () {
                         <p className="font-normal text-gray-700 dark:text-gray-800">
                             If you are looking for a partner with the best new job opportunities throughout the Denver area, you’ve found us. Welcome to Excel Personnel.
                         </p>
-                            <Button type="button" class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
+                            <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
                                 Tell me more!
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                             </Button>
