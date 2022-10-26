@@ -4,7 +4,7 @@ import { Tabs, Timeline } from 'flowbite-react'
 
 
 
-export default function AboutPage () {
+export default function About() {
 
     return (
         <>
