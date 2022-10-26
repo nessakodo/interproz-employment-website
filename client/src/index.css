@@ -35,11 +35,10 @@ bg-hero {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  filter: grayscale(1);
+  filter: grayscale(1) contrast(.7);
   size-adjust: 50%;
   grid-template-columns: .1fr .1fr .1fr .1fr .1fr .1fr;
   grid-gap: 100px;
-  
 }
 
 .skill-icons>img {
