@@ -1,5 +1,10 @@
 class AppliedJobsController < ApplicationController
 
+
+    def index 
+        render json: AppliedJob.all
+    end
+
     def show
         apply = AppliedJob.find(params[:id])
         render json: apply, status: :ok

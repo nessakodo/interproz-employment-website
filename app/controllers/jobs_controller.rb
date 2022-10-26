@@ -10,7 +10,8 @@ class JobsController < ApplicationController
     end
 
     def remove
-        AppliedJob.where(job_id: params[:job], candidate_id: params[:candidate]).destroy_all
+        job = AppliedJob.where(job_id: params[:job], candidate_id: params[:candidate])
+        job.destroy_all
         render json: "you have removed this opportunity", status: :accepted
     end
 
