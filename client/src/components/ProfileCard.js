@@ -50,7 +50,11 @@ function ProfileCard({ currentCandidate, setCurrentCandidate, profPhoto, setProf
             method: "POST",
             body: data
         })
+        .then((data) => {
+            setProfPhoto(data)
+        })
     }
+
 
 
     return (

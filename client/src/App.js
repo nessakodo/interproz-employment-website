@@ -55,6 +55,7 @@ export default function App() {
       )
   }, [loggedIn]);
 
+  // fetching profile photo
   function fetchProfPhoto(id) {
     fetch(`/current_candidate_photos?id=${id}`)
       .then(r => r.json())

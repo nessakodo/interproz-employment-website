@@ -65,8 +65,8 @@ function Jobs({ jobs, loggedIn, currentCandidate, onApply }) {
                     </Dropdown.Item>
                 </Dropdown> */}
             </div>
-            <div className='flex items-center flex-col pt-1'>
-                {jobCards}
+            <div className='flex items-center bg-gray-300 bg-opacity-50 flex-col pt-1 '>
+                {jobCards }
             </div>
         </div>
     )

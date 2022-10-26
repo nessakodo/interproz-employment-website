@@ -2,7 +2,7 @@ import React from 'react'
 import ProfileCard from './ProfileCard'
 import MyJobs from "./MyJobs"
 
-export default function Profile({ onRemove, setJobsComp, jobsComp, profPhoto, currentCandidate, setCurrentCandidate, setProfileCard, myJobs }) {
+export default function Profile({ onRemove, setJobsComp, jobsComp, profileCard, profPhoto, currentCandidate, setCurrentCandidate, setProfileCard, myJobs }) {
 
     function handleClick(e) {
         const state = e.target.name
@@ -36,10 +36,11 @@ export default function Profile({ onRemove, setJobsComp, jobsComp, profPhoto, cu
 
                 {jobsComp = true  ? 
                 <MyJobs currentCandidate={currentCandidate} myJobs={myJobs} onRemove={onRemove} />
-
                 :
                 <ProfileCard currentCandidate={currentCandidate} setCurrentCandidate={setCurrentCandidate} profPhoto={profPhoto} />
                 }
+
+          
 
 </div>
 </div>

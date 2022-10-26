@@ -9,6 +9,7 @@ class CandidatesController < ApplicationController
         candidate = Candidate.find_by(id: params[:id])
         render json: candidate, status: :accepted
     end
+
     
     def create
         candidate = Candidate.create!(candidate_params)
@@ -22,9 +23,8 @@ class CandidatesController < ApplicationController
 
 
     def update
-        candidate = Candidate.find_by(id: params[:id])
-        candidate.update!(user_params)
-        render json: candidate, status: :accepted
+        @candidate.update!(candidate_params)
+        render json: @candidate, status: :accepted
       end
 
 private
