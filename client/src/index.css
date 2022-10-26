@@ -66,6 +66,7 @@ section h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0px;
+  margin-top: -50px;
 }
 
 
