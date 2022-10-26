@@ -19,3 +19,33 @@ code {
     monospace;
 }
 
+.article {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 30px;
+}
+
+div p1 {
+  font-size: 80px;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+  font-weight: 2000;
+  font-style: normal;
+  text-emphasis-color: black;
+  margin-top: 50%;
+
+}
+
+div p2 {
+  font-size: 50px;
+  font-weight: 400;
+  text-emphasis-color: black;
+}

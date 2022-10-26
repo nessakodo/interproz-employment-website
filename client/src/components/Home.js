@@ -8,7 +8,12 @@ export default function Home () {
 
     return (
     <>
-        <div class="ml-0 mr-40 max-w-med bg-white rounded-lg border border-gray-200 shadow-md">
+        <div style={{ backgroundImage: `url(${homepage_pic})`, backgroundRepeat:"no-repeat", backgroundSize: "cover", height: 700, opacity: .8 }}>
+            <p1>Excel Personnel</p1>
+            <p2> We specialize in Administration, Forklift, Packaging, Quality Control, Shipping & Receiving and Warehouse talent.</p2>
+        </div>
+        
+        {/* <div class="ml-0 mr-40 max-w-med bg-white rounded-lg border border-gray-200 shadow-md">
             <Card href="/candidates">
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     EXCEL PERSONNEL
@@ -21,7 +26,7 @@ export default function Home () {
                 </p>
             </Card>
             <img src={homepage_pic} alt="Picture Courtesy of Tiger Lily on Pexels"/>
-        </div>
+        </div> */}
 
     </>
 
