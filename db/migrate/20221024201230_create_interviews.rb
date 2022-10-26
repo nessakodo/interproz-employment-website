@@ -8,7 +8,6 @@ class CreateInterviews < ActiveRecord::Migration[6.1]
       t.string :format
       t.belongs_to :candidate, null: false, foreign_key: true
       t.belongs_to :job, null: false, foreign_key: true
-
       t.timestamps
     end
   end
