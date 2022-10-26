@@ -1,12 +1,35 @@
 import React from 'react';
 import { Card, Button } from 'flowbite-react';
+import wholefoods from '../assets/logos/wholefoods.png';
+import ball from '../assets/logos/ball.png';
+import fresca from '../assets/logos/fresca.png';
+import coors from '../assets/logos/coors.png';
+import cardinal from '../assets/logos/cardinal.png';
+// import acme from '../assets/logos/acme.png';
+// import aspen from '../assets/logos/aspen.png';
+// import bigo from '../assets/logos/bigo.png';
+// import bmc from '../assets/logos/bmc.png';
+// import brownss from '../assets/logos/brownss.png';
+// import cintas from '../assets/logos/cintas.png';
+// import dmco from '../assets/logos/dmco.png';
+// import empire from '../assets/logos/empire.png';
+// import forterra from '../assets/logos/forterra.png';
+// import jepp from '../assets/logos/jepp.png';
+// import liva from '../assets/logos/liva.png';
+// import metal from '../assets/logos/metal.png';
+// import napa from '../assets/logos/napa.png';
+// import sorin from '../assets/logos/sorin.png';
+// import sund from '../assets/logos/sund.png';
+// import tms from '../assets/logos/tms.png';
+// import trelle from '../assets/logos/trelle.png';
+// import uec from '../assets/logos/uec.png';
 
 
 export default function Home () {
 
     return (
         <>
-        <div class="bg-hero bg-cover bg-no-repeat">
+        <div class="bg-hero bg-contain bg-no-repeat">
                 <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
                     <div class="p-20 text-7xl text-black bg-gray-300 bg-opacity-50 ml-0 mr-10">
                         EXCEL PERSONNEL <br /> 
@@ -21,34 +44,10 @@ export default function Home () {
 
                 <Card class="bg-gray-200 ml-0 mr-96 h-96 w-96 ">
                         <h5 className="text-2xl font-bold tracking-tight ">
-                            Noteworthy technology acquisitions 2021
+                            Candidates
                         </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                        </p>
-                            <Button>
-                                Read more
-                                <svg
-                                className="ml-2 -mr-1 h-4 w-4"
-                                fill="yellow-700"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
-                            </Button>
-                    </Card>
-
-                    <Card class="bg-gray-100 mr-0 ml-96 h-96 w-96">
-                        <h5 className="text-2xl font-bold tracking-tight ">
-                            Noteworthy technology acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                            Excel Personnel has been providing expert recruiting services in Denver, CO for over three decades. We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed.
                         </p>
                             <Button>
                                 Read more
@@ -66,6 +65,39 @@ export default function Home () {
                                 </svg>
                             </Button>
                     </Card>
+
+                    <Card class="bg-gray-100 mr-0 ml-96 h-96 w-96">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Clients
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                            We know staffing. Use our 30+ years of Denver recruiting and staffing services to your benefit. We are devoutly committed to developing a strong understanding of our clients’ business to continue providing each client with customized solutions to your talent needs.
+                        </p>
+                            <Button>
+                                Read more
+                                <svg
+                                className="ml-2 -mr-1 h-4 w-4"
+                                fill="bg-slate-600"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clipRule="evenodd"
+                                    />
+                                </svg>
+                            </Button>
+                    </Card>
+                <section>
+                    <div class="skill-icons">
+                        <div><img src={wholefoods} alt="wholefoods logo"/></div>
+                        <div><img src={ball} alt="ball logo"/></div>
+                        <div><img src={fresca} alt="fresca logo"/></div>
+                        <div><img src={coors} alt="coors logo"/></div>
+                        <div><img src={cardinal} alt="cardinal logo"/></div>
+                    </div>    
+                </section>
         </div>
 
 

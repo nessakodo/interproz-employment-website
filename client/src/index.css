@@ -26,3 +26,22 @@ bg-hero {
   border: 2px solid;
   color: pink;
 }
+
+.skill-icons {
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  filter: grayscale(1);
+}
+
+.skill-icons>img {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 1em;
+  height: 20 px;
+  margin: 0 1% 1em 1%;
+}
