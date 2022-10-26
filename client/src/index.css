@@ -34,18 +34,22 @@ code {
 }
 
 div p1 {
-  font-size: 80px;
-  font-feature-settings: "kern", "liga", "pnum";
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
-  font-weight: 2000;
+  font-size: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-style: normal;
   text-emphasis-color: black;
   margin-top: 50%;
+  padding-block: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  
 
 }
 
 div p2 {
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 400;
   text-emphasis-color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 9px;
 }
