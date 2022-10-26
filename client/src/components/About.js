@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutpic from '../assets/aboutpic.jpg'
+// import aboutpic from '../assets/aboutpic.jpg'
 import { Tabs, Timeline } from 'flowbite-react'
 
 
@@ -9,8 +9,11 @@ export default function AboutPage () {
     return (
         <>
         <div>
-            <img src={aboutpic} alt="Picture Courtesy of Vojtech Okenka on Pexels" />
-            We don’t just build business relationships, we make friends. We want to get to know you, understand your hopes and dreams, and figure out how we can make them a reality. But above all things, we love building networks of candidates and clients, so that we can introduce you to one another, and create a working partnership.
+            <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+                <div class="p-80 text-black bg-gray-300 bg-opacity-70 max-w-max text-left text-9xl">
+                Why Choose Excel? 
+                </div> 
+            </header>
         </div>
         <h1>Why Choose Excel?</h1>
         <Tabs.Group aria-label="Default tabs" style="default" >
