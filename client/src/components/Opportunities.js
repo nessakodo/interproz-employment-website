@@ -5,6 +5,11 @@ import Jobs from "./Jobs"
 
 export default function Opportunities ({currentCandidate, jobs, setJobs, loggedIn, onApply}) {
 
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
+
 
     useEffect( () => {
         fetch(`http://localhost:3000/jobs`)

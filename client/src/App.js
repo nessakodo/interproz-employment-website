@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './index.css';
 
+
 // Page imports
 import NavBar from "./components/NavBar"
 import Signup from "./components/Signup"
@@ -28,6 +29,10 @@ export default function App() {
   const [myJobs, setMyJobs] = useState([])
   const [jobs, setJobs] = useState([])
 
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
 
   // log in fetch
   useEffect(() => {
