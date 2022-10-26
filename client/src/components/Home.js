@@ -90,8 +90,10 @@ export default function Home () {
                             </Button>
                     </Card>
                 <section>
-                    <div class="p-20 text-7xl text-black ml-0 mr-10">
-                    <h1>Companies who chose us</h1> 
+                    <div>
+                        <br />
+                        <h1>Companies who chose us</h1> 
+                        <br />
                     </div>
                     <div class="skill-icons">
                         <div><img src={wholefoods} alt="wholefoods logo"/></div>
