@@ -65,7 +65,7 @@ function Jobs({ jobs, loggedIn, currentCandidate, onApply }) {
                     </Dropdown.Item>
                 </Dropdown> */}
             </div>
-            <div className='flex items-center bg-gray-300 bg-opacity-50 flex-col pt-1 '>
+            <div className='inline-grid gap-10 grid-flow-col grid-cols-3 grid-rows-4 gap-3 mb-10 bg-gray-300 bg-opacity-50 pt-1 '>
                 {jobCards }
             </div>
         </div>
