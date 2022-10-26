@@ -10,7 +10,7 @@ export default function AboutPage () {
         <>
         <div>
             <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-                <div class="p-80 text-black bg-gray-300 bg-opacity-70 max-w-max text-left text-9xl">
+                <div class="p-20 text-black bg-gray-300 bg-opacity-70 max-w-max text-left text-9xl">
                 Why Choose Excel? 
                 </div> 
             </header>

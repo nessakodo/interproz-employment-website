@@ -1,6 +1,7 @@
 import React from "react"
 import candidatespic from '../assets/candidatespic.jpg'
 
+
 export default function Clients () {
 
     return (
@@ -10,6 +11,7 @@ export default function Clients () {
             EXCEL PERSONNEL <br /> 
             Staffing Improved<br /> 
             </div>
+         
         </>
     )
 

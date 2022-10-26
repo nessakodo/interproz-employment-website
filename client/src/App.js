@@ -10,6 +10,7 @@ import Home from "./components/Home"
 import Profile from "./components/Profile"
 import Clients from "./components/Clients"
 import Candidates from "./components/Candidates"
+import Interview from "./components/Interview"
 // import Jobs from "./components/Jobs"
 
 
@@ -158,7 +159,9 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-      
+          <Route exact path="/interview">
+            <Interview />
+          </Route>
           {currentCandidate &&
             <Route exact path="/profile">
               <Profile
