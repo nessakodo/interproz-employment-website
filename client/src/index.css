@@ -35,7 +35,6 @@ bg-hero {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  filter: grayscale(1) contrast(.7);
   size-adjust: 50%;
   grid-template-columns: .1fr .1fr .1fr .1fr .1fr .1fr;
   grid-gap: 100px;
@@ -51,6 +50,57 @@ bg-hero {
   width: 1.5in;
   height: 1.5in;
 }
+
+.wf-icon { filter: grayscale(1) contrast(.7);}
+.wf-icon:hover { filter: grayscale(0);}
+.ball-icon { filter: grayscale(1) contrast(.7);}
+.ball-icon:hover { filter: grayscale(0);}
+.fresca-icon { filter: grayscale(1) contrast(.7);}
+.fresca-icon:hover { filter: grayscale(0);}
+.coors-icon { filter: grayscale(1) contrast(.7);}
+.coors-icon:hover { filter: grayscale(0);}
+.cardinal-icon { filter: grayscale(1) contrast(.7);}
+.cardinal-icon:hover { filter: grayscale(0);}
+.acme-icon { filter: grayscale(1) contrast(.7);}
+.acme-icon:hover { filter: grayscale(0);}
+.aspen-icon { filter: grayscale(1) contrast(.7);}
+.aspen-icon:hover { filter: grayscale(0);}
+.bigo-icon { filter: grayscale(1) contrast(.7);}
+.bigo-icon:hover { filter: grayscale(0);}
+.bmc-icon { filter: grayscale(1) contrast(.7);}
+.bmc-icon:hover { filter: grayscale(0);}
+.brownss-icon { filter: grayscale(1) contrast(.7);}
+.brownss-icon:hover { filter: grayscale(0);}
+.cintas-icon { filter: grayscale(1) contrast(.7);}
+.cintas-icon:hover { filter: grayscale(0);}
+.dmco-icon { filter: grayscale(1) contrast(.7);}
+.dmco-icon:hover { filter: grayscale(0);}
+.empire-icon { filter: grayscale(1) contrast(.7);}
+.empire-icon:hover { filter: grayscale(0);}
+.forterra-icon { filter: grayscale(1) contrast(.7);}
+.forterra-icon:hover { filter: grayscale(0);}
+.jepp-icon { filter: grayscale(1) contrast(.7);}
+.jepp-icon:hover { filter: grayscale(0);}
+.liva-icon { filter: grayscale(1) contrast(.7);}
+.liva-icon:hover { filter: grayscale(0);}
+.metal-icon { filter: grayscale(1) contrast(.7);}
+.metal-icon:hover { filter: grayscale(0);}
+.napa-icon { filter: grayscale(1) contrast(.7);}
+.napa-icon:hover { filter: grayscale(0);}
+.sorin-icon { filter: grayscale(1) contrast(.7);}
+.sorin-icon:hover { filter: grayscale(0);}
+.sund-icon { filter: grayscale(1) contrast(.7);}
+.sund-icon:hover { filter: grayscale(0);}
+.tms-icon { filter: grayscale(1) contrast(.7);}
+.tms-icon:hover { filter: grayscale(0);}
+.trelle-icon { filter: grayscale(1) contrast(.7);}
+.trelle-icon:hover { filter: grayscale(0);}
+.uec-icon { filter: grayscale(1) contrast(.7);}
+.uec-icon:hover { filter: grayscale(0);}
+
+
+
+
 
 section h1 {
   font-size: xx-large;

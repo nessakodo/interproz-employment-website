@@ -62,13 +62,10 @@ export default function Home () {
         <>
         <div class="bg-hero bg-cover bg-no-repeat">
                 <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-                    <div class="p-20 text-7xl text-black bg-gray-300 bg-opacity-50 ml-0 mr-10">
+                    <div class="p-20 text-7xl text-black bg-gray-300 bg-opacity-75">
                         EXCEL PERSONNEL <br /> 
-                        <div class="text-2xl">
+                        <div class="text-2xl pt-8">
                             We specialize in Administration, Forklift, Packaging, Quality Control, Shipping & Receiving and Warehouse talent. 
-                            <div class="text-3xl">
-                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> 
-                            </div>
                         </div>
                     </div> 
                 </header>
@@ -112,29 +109,29 @@ export default function Home () {
                         <br />
                     </div>
                     <div class="skill-icons">
-                        <div><img src={wholefoods} alt="wholefoods logo"/></div>
-                        <div><img src={ball} alt="ball logo"/></div>
-                        <div><img src={fresca} alt="fresca logo"/></div>
-                        <div><img src={coors} alt="coors logo"/></div>
-                        <div><img src={cardinal} alt="cardinal logo"/></div>
-                        <div><img src={acme} alt="acme logo"/></div>
-                        <div><img src={aspen} alt="aspen logo"/></div>
-                        <div><img src={bigo} alt="bigo logo"/></div>
-                        <div><img src={bmc} alt="bmc logo"/></div>
-                        <div><img src={brownss} alt="brownss logo"/></div>
-                        <div><img src={cintas} alt="cintas logo"/></div>
-                        <div><img src={dmco} alt="dmco logo"/></div>
-                        <div><img src={empire} alt="empire logo"/></div>
-                        <div><img src={forterra} alt="forterra logo"/></div>
-                        <div><img src={jepp} alt="jepp logo"/></div>
-                        <div><img src={liva} alt="liva logo"/></div>
-                        <div><img src={metal} alt="metal logo"/></div>
-                        <div><img src={napa} alt="napa logo"/></div>
-                        <div><img src={sorin} alt="sorin logo"/></div>
-                        <div><img src={sund} alt="sund logo"/></div>
-                        <div><img src={tms} alt="tms logo"/></div>
-                        <div><img src={trelle} alt="trelle logo"/></div>
-                        <div><img src={uec} alt="uec logo"/></div>
+                        <div class="wf-icon"><img src={wholefoods} alt="wholefoods logo"/></div>
+                        <div class="ball-icon"><img src={ball} alt="ball logo"/></div>
+                        <div class="fresca-icon"><img src={fresca} alt="fresca logo"/></div>
+                        <div class="coors-icon"><img src={coors} alt="coors logo"/></div>
+                        <div class="cardinal-icon"><img src={cardinal} alt="cardinal logo"/></div>
+                        <div class="acme-icon"><img src={acme} alt="acme logo"/></div>
+                        <div class="aspen-icon"><img src={aspen} alt="aspen logo"/></div>
+                        <div class="bigo-icon"><img src={bigo} alt="bigo logo"/></div>
+                        <div class="bmc-icon"><img src={bmc} alt="bmc logo"/></div>
+                        <div class="brownss-icon"><img src={brownss} alt="brownss logo"/></div>
+                        <div class="cintas-icon"><img src={cintas} alt="cintas logo"/></div>
+                        <div class="dmco-icon"><img src={dmco} alt="dmco logo"/></div>
+                        <div class="empire-icon"><img src={empire} alt="empire logo"/></div>
+                        <div class="forterra-icon"><img src={forterra} alt="forterra logo"/></div>
+                        <div class="jepp-icon"><img src={jepp} alt="jepp logo"/></div>
+                        <div class="liva-icon"><img src={liva} alt="liva logo"/></div>
+                        <div class="metal-icon"><img src={metal} alt="metal logo"/></div>
+                        <div class="napa-icon"><img src={napa} alt="napa logo"/></div>
+                        <div class="sorin-icon"><img src={sorin} alt="sorin logo"/></div>
+                        <div class="sund-icon"><img src={sund} alt="sund logo"/></div>
+                        <div class="tms-icon"><img src={tms} alt="tms logo"/></div>
+                        <div class="trelle-icon"><img src={trelle} alt="trelle logo"/></div>
+                        <div class="uec-icon"><img src={uec} alt="uec logo"/></div>
 
 
                     </div>    
