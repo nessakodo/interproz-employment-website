@@ -42,11 +42,19 @@ export default function Home () {
     }
 
     function onOpportunitiesClick() {
-    history.push('/opportunities')
+        history.push('/opportunities')
     }
 
     function onAboutClick() {
         history.push('/about')
+        }
+
+    function onCandidatesClick() {
+        history.push('/opportunities')
+        }
+
+    function onClientsClick() {
+        history.push('/clients')
         }
     
 
@@ -75,7 +83,7 @@ export default function Home () {
                                 <p className="font-normal text-gray-700 dark:text-gray-800">
                                     Excel Personnel has been providing expert recruiting services in Denver, CO for over three decades. We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed.
                                 </p>
-                                <Button type="button" class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
+                                <Button type="button" onClick={onCandidatesClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
                                         Read more
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                     </Button>
@@ -90,7 +98,7 @@ export default function Home () {
                         <p className="font-normal text-gray-700 dark:text-gray-800">
                             We know staffing. Use our 30+ years of Denver recruiting and staffing services to your benefit. We are devoutly committed to developing a strong understanding of our clients’ business to continue providing each client with customized solutions to your talent needs.
                         </p>
-                            <Button type="button" class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
+                            <Button type="button" onClick={onClientsClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
                                 Read more
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </Button>
@@ -141,38 +149,38 @@ export default function Home () {
                                 <p className="font-normal text-gray-700 dark:text-gray-800">
                                     We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed. 
                                 </p>
-                                <Button type="button" onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                        I'm ready to leap!
+                                <Button type="button" onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                        {/* I'm ready to leap! */}
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                                     </Button>
                             </Card>
             </div>
 
             <div class="grid-child4">
-                    <Card class="bg-gray-100 mr-0 h-80">
+                    <Card class="bg-gray-200 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Submit your Resume
                         </h5>
                         <p className="font-normal text-gray-700 dark:text-gray-800">
                             Quick Apply for New Candidates. Provide Your Contact Information & Upload Your Resume. 
                         </p>
-                            <Button type="button" onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                Send it! 
+                            <Button type="button" onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                {/* Send it!  */}
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
                             </Button>
                     </Card>
             </div>
 
             <div class="grid-child5">
-                        <Card class="bg-gray-100 ml-0 h-80 ">
+                        <Card class="bg-gray-200 ml-0 h-80 ">
                                 <h5 className="text-2xl font-bold tracking-tight ">
                                     Job Opportunities
                                 </h5>
                                 <p className="font-normal text-gray-700 dark:text-gray-800">
                                    We pride ourselves in getting to know you, giving you personalized attention, clear communication, and honest accountability.
                                 </p>
-                                <Button type="button" onClick={onOpportunitiesClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                        Peep some jobs!
+                                <Button type="button" onClick={onOpportunitiesClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                        {/* Peep some jobs! */}
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"></path></svg>
                                     </Button>
                             </Card>
@@ -186,8 +194,8 @@ export default function Home () {
                         <p className="font-normal text-gray-700 dark:text-gray-800">
                             If you are looking for a partner with the best new job opportunities throughout the Denver area, you’ve found us. Welcome to Excel Personnel.
                         </p>
-                            <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                Tell me more!
+                            <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                {/* Tell me more! */}
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                             </Button>
                     </Card>
@@ -198,10 +206,10 @@ export default function Home () {
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                 <div>
-                <img src={map_footer} class="mr-3 h-max pr-16" alt="Flowbite Logo" />
+                <img src={map_footer} class="mr-3 max-h-96 pr-16" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Conveniently located at I-25 and Thornton Pkwy, <br />our office is located just off of Grant St.</span>
                 </div>
-                    <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:gap-6">
+                    <div className="grid grid-cols-2 gap-x-24 max-w-full mr-24 mt-10">
                         <div>
                         <Footer.Title title="Denver / Thornton Office" />
                         <Footer.LinkGroup col={true}>
