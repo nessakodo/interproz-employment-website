@@ -27,7 +27,7 @@ bg-hero {
   color: pink;
 }
 
-.skill-icons {
+/* .skill-icons {
   margin: 2em auto;
   display: grid;
   justify-content: center;
@@ -38,7 +38,7 @@ bg-hero {
   size-adjust: 50%;
   grid-template-columns: .1fr .1fr .1fr .1fr .1fr .1fr;
   grid-gap: 100px;
-}
+} */
 
 .skill-icons>img {
   display: block;
@@ -51,52 +51,52 @@ bg-hero {
   height: 1.5in;
 }
 
-.wf-icon { filter: grayscale(1) contrast(.7);}
-.wf-icon:hover { filter: grayscale(0);}
-.ball-icon { filter: grayscale(1) contrast(.7);}
-.ball-icon:hover { filter: grayscale(0);}
-.fresca-icon { filter: grayscale(1) contrast(.7);}
-.fresca-icon:hover { filter: grayscale(0);}
-.coors-icon { filter: grayscale(1) contrast(.7);}
-.coors-icon:hover { filter: grayscale(0);}
-.cardinal-icon { filter: grayscale(1) contrast(.7);}
-.cardinal-icon:hover { filter: grayscale(0);}
-.acme-icon { filter: grayscale(1) contrast(.7);}
-.acme-icon:hover { filter: grayscale(0);}
-.aspen-icon { filter: grayscale(1) contrast(.7);}
-.aspen-icon:hover { filter: grayscale(0);}
-.bigo-icon { filter: grayscale(1) contrast(.7);}
-.bigo-icon:hover { filter: grayscale(0);}
-.bmc-icon { filter: grayscale(1) contrast(.7);}
-.bmc-icon:hover { filter: grayscale(0);}
-.brownss-icon { filter: grayscale(1) contrast(.7);}
-.brownss-icon:hover { filter: grayscale(0);}
-.cintas-icon { filter: grayscale(1) contrast(.7);}
-.cintas-icon:hover { filter: grayscale(0);}
-.dmco-icon { filter: grayscale(1) contrast(.7);}
-.dmco-icon:hover { filter: grayscale(0);}
-.empire-icon { filter: grayscale(1) contrast(.7);}
-.empire-icon:hover { filter: grayscale(0);}
-.forterra-icon { filter: grayscale(1) contrast(.7);}
-.forterra-icon:hover { filter: grayscale(0);}
-.jepp-icon { filter: grayscale(1) contrast(.7);}
-.jepp-icon:hover { filter: grayscale(0);}
-.liva-icon { filter: grayscale(1) contrast(.7);}
-.liva-icon:hover { filter: grayscale(0);}
-.metal-icon { filter: grayscale(1) contrast(.7);}
-.metal-icon:hover { filter: grayscale(0);}
-.napa-icon { filter: grayscale(1) contrast(.7);}
-.napa-icon:hover { filter: grayscale(0);}
-.sorin-icon { filter: grayscale(1) contrast(.7);}
-.sorin-icon:hover { filter: grayscale(0);}
-.sund-icon { filter: grayscale(1) contrast(.7);}
-.sund-icon:hover { filter: grayscale(0);}
-.tms-icon { filter: grayscale(1) contrast(.7);}
-.tms-icon:hover { filter: grayscale(0);}
-.trelle-icon { filter: grayscale(1) contrast(.7);}
-.trelle-icon:hover { filter: grayscale(0);}
-.uec-icon { filter: grayscale(1) contrast(.7);}
-.uec-icon:hover { filter: grayscale(0);}
+.wf-icon { filter: grayscale(1) contrast(.7); transition: transform .2s;}
+.wf-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.ball-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.ball-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.fresca-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.fresca-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.coors-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.coors-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.cardinal-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.cardinal-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.acme-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.acme-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.aspen-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.aspen-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.bigo-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.bigo-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.bmc-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.bmc-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.brownss-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.brownss-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.cintas-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.cintas-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.dmco-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.dmco-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.empire-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.empire-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.forterra-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.forterra-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.jepp-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.jepp-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.liva-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.liva-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.metal-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.metal-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.napa-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.napa-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.sorin-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.sorin-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.sund-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.sund-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.tms-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.tms-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.trelle-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.trelle-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
+.uec-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; }
+.uec-icon:hover { filter: grayscale(0); transform: scale(1.8) ;}
 
 
 

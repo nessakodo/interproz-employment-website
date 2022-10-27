@@ -108,7 +108,7 @@ export default function Home () {
                         <h1><span class="highlight-container"><span class="highlight">Companies who chose us</span></span></h1> 
                         <br />
                     </div>
-                    <div class="skill-icons">
+                    <div class="skill-icons inline-grid grid-cols-5 gap-44 p-24 shrink">
                         <div class="wf-icon"><img src={wholefoods} alt="wholefoods logo"/></div>
                         <div class="ball-icon"><img src={ball} alt="ball logo"/></div>
                         <div class="fresca-icon"><img src={fresca} alt="fresca logo"/></div>
