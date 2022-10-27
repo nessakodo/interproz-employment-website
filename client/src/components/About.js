@@ -5,10 +5,10 @@ import { Timeline, Card } from 'flowbite-react'
 
 export default function About() {
     
-    // useEffect(() => {
-    //     // 👇️ scroll to top on page load
-    //     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    //   }, []);
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
 
    
 
