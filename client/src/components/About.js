@@ -29,7 +29,7 @@ export default function About() {
             <div class="flex justify-start pt-20 pb-20">
                 <Timeline.Item>
                     <Timeline.Point/>
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         Established
@@ -44,7 +44,7 @@ export default function About() {
                 </Timeline.Item>
                 <Timeline.Item>
                     <Timeline.Point />
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         Expanded
@@ -59,7 +59,7 @@ export default function About() {
                 </Timeline.Item>
                 <Timeline.Item>
                     <Timeline.Point />
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         Denver Headquaters
@@ -74,7 +74,7 @@ export default function About() {
                 </Timeline.Item>
                 <Timeline.Item>
                     <Timeline.Point />
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         New Offices
@@ -89,7 +89,7 @@ export default function About() {
                 </Timeline.Item>
                 <Timeline.Item>
                     <Timeline.Point />
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         Denver Tech Center
@@ -104,7 +104,7 @@ export default function About() {
                 </Timeline.Item>
                 <Timeline.Item>
                     <Timeline.Point />
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         Nominated
@@ -119,7 +119,7 @@ export default function About() {
                 </Timeline.Item>
                 <Timeline.Item>
                     <Timeline.Point />
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                     <Timeline.Content>
                     <Timeline.Title class="text-black font-bold">
                         Three Decades
@@ -135,31 +135,41 @@ export default function About() {
             </div>
         </Timeline>
 
-      
-        
+        <div class="flex justify-center items-center p-20 text-7xl text-black font-thin"><h1>Our Values</h1></div>
+
         <Tabs.Group
             aria-label="Pills"
             style="pills"
-            class="mt-20 ">
+            class="flex justify-evenly">
             <Tabs.Item
                 active={true}
                 title="Focus"
             >
+                <div class="flex items-center place-content-center w-64 p-8 h-72 rounded-xl border-x-2 border-y-2 border-double border-orange-500">
                 We realize that strong search capabilities are what ensures the success of our clients, so that’s where we focus our resources and efforts.
+                </div>
             </Tabs.Item>
             <Tabs.Item title="Quality">
+                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
                 Quality costs less – when you need to hire, don’t settle for anything less than the highest quality available.
+                </div>
             </Tabs.Item>
             <Tabs.Item title="Relationships">
+                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
                 You need a staffing partner that focuses on solving problems rather than just filling orders. We take a strategic approach to solving your staffing challenges and improving your bottom line.
+                </div>
             </Tabs.Item>
             <Tabs.Item title="Results">
+                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
                 In order to make sure of constant progress and improvement, you need to be able to measure your results and the parameters of success that have been agreed upon. We pride ourselves on achieving results that benefit you!
+                </div>
             </Tabs.Item>
             <Tabs.Item
                 title="Expertise"
             >
+                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
                 We have been providing exceptional, customized staffing fulfillment since 1992.
+                </div>
             </Tabs.Item>
         </Tabs.Group>
         
