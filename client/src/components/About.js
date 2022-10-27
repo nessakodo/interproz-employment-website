@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Tabs, Timeline, HiCalendar } from 'flowbite-react'
+import { Timeline, Card } from 'flowbite-react'
 
 
 
@@ -135,45 +135,64 @@ export default function About() {
             </div>
         </Timeline>
 
+
         <div class="flex justify-center items-center p-20 text-7xl text-black font-thin"><h1>Our Values</h1></div>
 
-        <Tabs.Group
-            aria-label="Pills"
-            style="pills"
-            class="flex justify-evenly">
-            <Tabs.Item
-                active={true}
-                title="Focus"
-            >
-                <div class="flex items-center place-content-center w-64 p-8 h-72 rounded-xl border-x-2 border-y-2 border-double border-orange-500">
-                We realize that strong search capabilities are what ensures the success of our clients, so that’s where we focus our resources and efforts.
+
+        <div class="grid-container3">
+            <div class="grid-child7">
+                        <Card class="bg-gray-200 ml-0 h-80 ">
+                                <h5 className="text-2xl font-bold tracking-tight ">
+                                    Focus
+                                </h5>
+                                <p className="font-normal text-gray-700 dark:text-gray-800">
+                                We realize that strong search capabilities are what ensures the success of our clients, so that’s where we focus our resources and efforts.
+                                </p>
+                            </Card>
+                    </div>
+                    
+
+            <div class="grid-child8">
+                    <Card class="bg-gray-100 mr-0 h-80">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Relationships
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        You need a staffing partner that focuses on solving problems rather than just filling orders. We take a strategic approach to solving your staffing challenges and improving your bottom line.
+                        </p>
+                    </Card>
                 </div>
-            </Tabs.Item>
-            <Tabs.Item title="Quality">
-                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
-                Quality costs less – when you need to hire, don’t settle for anything less than the highest quality available.
+                <div class="grid-child9">
+                    <Card class="bg-gray-100 mr-0 h-80">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Results
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        In order to make sure of constant progress and improvement, you need to be able to measure your results and the parameters of success that have been agreed upon. We pride ourselves on achieving results that benefit you!
+                        </p>
+                    </Card>
                 </div>
-            </Tabs.Item>
-            <Tabs.Item title="Relationships">
-                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
-                You need a staffing partner that focuses on solving problems rather than just filling orders. We take a strategic approach to solving your staffing challenges and improving your bottom line.
+                <div class="grid-child10">
+                    <Card class="bg-gray-100 mr-0 h-80">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Expertise
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        We have been providing exceptional, customized staffing fulfillment since 1992.
+                        </p>
+                    </Card>
                 </div>
-            </Tabs.Item>
-            <Tabs.Item title="Results">
-                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
-                In order to make sure of constant progress and improvement, you need to be able to measure your results and the parameters of success that have been agreed upon. We pride ourselves on achieving results that benefit you!
-                </div>
-            </Tabs.Item>
-            <Tabs.Item
-                title="Expertise"
-            >
-                <div class="flex justify-center items-center w-36 rounded-xl border-x-2 border-y-2 border-double border-orange-500 p-12">
-                We have been providing exceptional, customized staffing fulfillment since 1992.
-                </div>
-            </Tabs.Item>
-        </Tabs.Group>
-        
-        
+                <div class="grid-child11">
+                        <Card class="bg-gray-200 ml-0 h-80 ">
+                                <h5 className="text-2xl font-bold tracking-tight ">
+                                    Quality
+                                </h5>
+                                <p className="font-normal text-gray-700 dark:text-gray-800">
+                                When you need to hire, do not settle for anything less than the highest quality available.
+                                </p>
+                            </Card>
+                    </div>
+        </div>
         </>
     )
 
