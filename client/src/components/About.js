@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
-import { Timeline, Card } from 'flowbite-react'
+import { Timeline, Footer, Card } from 'flowbite-react'
+import map_footer from '../assets/map_footer.jpeg';
 
 
 
@@ -17,13 +18,13 @@ export default function About() {
       
         
         <>
-        <div class="bg-about bg-contain bg-no-repeat">
-                <header class="h-screen pt-20 text-9xl text-black font-thin">About us</header>
+        <div class="bg-about bg-cover bg-no-repeat bg-center">
+                <header class="h-screen pt-20 pl-20 text-9xl text-black font-thin">About us</header>
         </div>
 
 
         <Timeline horizontal={true}>
-            <div class="flex justify-start pb-20">
+            <div class="flex justify-start pt-20 pb-20">
                 <Timeline.Item>
                     <Timeline.Point/>
                     <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
@@ -190,6 +191,42 @@ export default function About() {
                             </Card>
                     </div>
         </div>
+
+        <Footer container={true}>
+            <div className="w-full">
+                <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+                <div>
+                <img src={map_footer} class="mr-3 max-h-96 pr-16" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Conveniently located at I-25 and Thornton Pkwy, <br />our office is located just off of Grant St.</span>
+                </div>
+                    <div className="grid grid-cols-2 gap-x-24 max-w-full mr-24 mt-10">
+                        <div>
+                        <Footer.Title title="Denver / Thornton Office" />
+                        <Footer.LinkGroup col={true}>
+                            9351 Grant St.<br />Suite 570<br />Thornton, CO 80229<br />Phone: (303)-427-4600<br /> Fax: (303)427-4147
+                        </Footer.LinkGroup>
+                        </div>
+                        <div>
+                        <Footer.Title title="Corporate / Payroll Office" />
+                        <Footer.LinkGroup col={true}>
+                            10111 Inverness Main St.<br />Englewood, CO 80112<br />Phone: (303)-805-2300<br /> Fax: (303)805-2400
+                        </Footer.LinkGroup>
+                        </div>
+                  
+                    </div>
+                </div>
+                <Footer.Divider />
+                    <div className="w-full sm:flex sm:items-center sm:justify-between">
+                    <Footer.Copyright
+                        href="#"
+                        by="Flowbite™"
+                        year={2022}/>
+        
+                </div>
+            </div>
+        </Footer>
+
+
         </>
     )
 
