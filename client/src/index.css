@@ -49,6 +49,8 @@ bg-hero {
   object-fit: cover;
   width: 1.5in;
   height: 1.5in;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .wf-icon { filter: grayscale(1) contrast(.7); transition: transform .2s;}

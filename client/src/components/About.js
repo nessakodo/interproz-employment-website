@@ -1,26 +1,146 @@
 import React, {useEffect} from 'react';
-// import aboutpic from '../assets/aboutpic.jpg'
-import { Tabs, Timeline } from 'flowbite-react'
+import { Tabs, Timeline, HiCalendar } from 'flowbite-react'
 
 
 
 export default function About() {
     
-    useEffect(() => {
-        // 👇️ scroll to top on page load
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-      }, []);
+    // useEffect(() => {
+    //     // 👇️ scroll to top on page load
+    //     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    //   }, []);
+
+   
 
     return (
+
+      
+        
         <>
         <div class="bg-about bg-cover bg-no-repeat">
                 <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"/>
+                <div class="p-20 text-7xl text-black bg-white bg-opacity-25 font-thin">
+                        About us <br /> 
+                </div> 
         </div>
-        <div class="p-20 text-7xl text-black bg-white bg-opacity-75">
-                        Why choose Excel? <br /> 
-                    </div> 
+
+
+        <Timeline horizontal={true}>
+            <div class="flex justify-start pt-20 pb-20">
+                <Timeline.Item>
+                    <Timeline.Point/>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        Established
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        1997
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Excel Personnel established in San Diego, CA
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <Timeline.Point />
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        Expanded
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        1992
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Expanded to service the Denver market & the Front Range
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <Timeline.Point />
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        Denver Headquaters
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        1992
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Denver established as corporate headquarters
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <Timeline.Point />
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        New Offices
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        2002
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Five offices located in Denver area covering the entire Metro region
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <Timeline.Point />
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        Denver Tech Center
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        2004
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Relocated Corporate offices to the Denver Tech Center
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <Timeline.Point />
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        Nominated
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        2007
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Nominated "Best Companies to Work for in Colorado"
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <Timeline.Point />
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <Timeline.Content>
+                    <Timeline.Title class="text-black font-bold">
+                        Three Decades
+                    </Timeline.Title>
+                    <Timeline.Time>
+                        2022
+                    </Timeline.Time>
+                    <Timeline.Body class="font-medium">
+                        Celebrated 30 years in Denver Metro region
+                    </Timeline.Body>
+                    </Timeline.Content>
+                </Timeline.Item>
+            </div>
+        </Timeline>
+
+      
         
-        <Tabs.Group aria-label="Default tabs"  >
+        <Tabs.Group
+            aria-label="Pills"
+            style="pills"
+            class="mt-20 ">
             <Tabs.Item
                 active={true}
                 title="Focus"
@@ -43,101 +163,7 @@ export default function About() {
             </Tabs.Item>
         </Tabs.Group>
         
-        <h1>Excel Milestones</h1>
-                <Timeline>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            1987 
-                        </Timeline.Time>
-                        <Timeline.Title>
-                        <div class= "text-black">
-                            Excel Personnel established in San Diego, CA
-                        </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            1992
-                        </Timeline.Time>
-                        <Timeline.Title>
-                            <div class= "text-black">
-                                Expanded to service the Denver market & the Front Range
-                            </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            1992
-                        </Timeline.Time>
-                        <Timeline.Title>
-                            <div class= "text-black">
-                                Denver established as corporate headquarters
-                            </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            2002
-                        </Timeline.Time>
-                        <Timeline.Title>
-                            <div class= "text-black">
-                                Five offices located in Denver area covering the entire Metro region
-                            </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            2004
-                        </Timeline.Time>
-                        <Timeline.Title>
-                            <div class= "text-black">
-                                Relocated Corporate offices to the Denver Tech Center
-                            </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            2007
-                        </Timeline.Time>
-                        <Timeline.Title>
-                            <div class= "text-black">
-                                Nominated "Best Companies to Work for in Colorado"
-                            </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point />
-                        <Timeline.Content>
-                        <Timeline.Time>
-                            2022
-                        </Timeline.Time>
-                        <Timeline.Title>
-                            <div class= "text-black">
-                                Celebrated 30 years in Denver Metro region
-                            </div>
-                        </Timeline.Title>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                </Timeline>
-
+        
         </>
     )
 
