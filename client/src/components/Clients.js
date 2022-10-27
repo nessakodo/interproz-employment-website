@@ -116,30 +116,31 @@ export default function Clients () {
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Value Added Services
                     </h5>
-                    <p className="font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                    <p className="font-normal text-gray-700 dark:text-gray-200">
+                        <div>Excel Personnel is pleased to offer the following services, bundled or unbundled, to fit your needs. These services will be billed at cost to our partners. <br /><br />Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.<br /><br /></div> 
+                        <ul1><div>Drug Testing (oral Test – same day results)</div></ul1>
+                        <ul2><div>Drug Testing (5 panel 48 hour results)</div></ul2>
+                        <ul3><div>Colorado In-State Criminal Background Checks</div></ul3>
+                        <ul4><div>Insight Pre-employment Integrity Testing</div></ul4>
+                        <ul5><div>Employment Application Processing</div></ul5>
+                        <ul6><div>Reference Checking</div></ul6>
+                        <ul7><div>Prior Employment Verification</div></ul7>
+                        <ul8><div>Education Verification</div></ul8>
+                        <ul9><div>Social Security Number Verification</div></ul9>
+                        <ul10><div>Credit Report</div></ul10>
+                        <ul11><div>Skill Testing (Office, Technical, Industrial)</div></ul11>
+                        <ul12><div>Payrolling Services</div></ul12>
+                        <ul13><div>Employment Law Seminars</div></ul13>
+                        <ul14><div>Safety and Site Inspections/Training</div></ul14>
+                        <ul15><div>Single Source Provider Relationships</div></ul15>
+                        <ul16><div>Excel On Premise Arrangements</div></ul16>
+                        
+
                     </p>
                 </Card>
             </div>
 
-            {/* Excel Personnel is pleased to offer the following services, bundled or unbundled, to fit your needs. These services will be billed at cost to our partners.
 
-Drug Testing (oral Test – same day results)
-Drug Testing (5 panel 48 hour results)
-Colorado In-State Criminal Background Checks
-Insight Pre-employment Integrity Testing
-Employment Application Processing
-Reference Checking
-Prior Employment Verification
-Education Verification
-Social Security Number Verification
-Credit Report
-Skill Testing (Office, Technical, Industrial)
-Payrolling Services
-Employment Law Seminars
-Safety and Site Inspections/Training
-Single Source Provider Relationships
-Excel On Premise Arrangements */}
 
 
             <Footer container={true}>
