@@ -1,6 +1,7 @@
 import React from "react"
 import { Footer, Card, Button } from 'flowbite-react'
 import map_footer from '../assets/map_footer.jpeg';
+import clients2 from '../assets/clients2.jpg';
 
 
 export default function Clients () {
@@ -106,6 +107,39 @@ export default function Clients () {
                                 </Card>
                         </div>
             </div>
+            
+            <div className="valueAddedServices">
+                <Card
+                    horizontal={true}
+                    imgSrc={clients2}
+                >
+                    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Value Added Services
+                    </h5>
+                    <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                    </p>
+                </Card>
+            </div>
+
+            {/* Excel Personnel is pleased to offer the following services, bundled or unbundled, to fit your needs. These services will be billed at cost to our partners.
+
+Drug Testing (oral Test – same day results)
+Drug Testing (5 panel 48 hour results)
+Colorado In-State Criminal Background Checks
+Insight Pre-employment Integrity Testing
+Employment Application Processing
+Reference Checking
+Prior Employment Verification
+Education Verification
+Social Security Number Verification
+Credit Report
+Skill Testing (Office, Technical, Industrial)
+Payrolling Services
+Employment Law Seminars
+Safety and Site Inspections/Training
+Single Source Provider Relationships
+Excel On Premise Arrangements */}
 
 
             <Footer container={true}>
