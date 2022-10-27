@@ -17,16 +17,13 @@ export default function About() {
       
         
         <>
-        <div class="bg-about bg-cover bg-no-repeat">
-                <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"/>
-                <div class="p-20 text-7xl text-black bg-white bg-opacity-25 font-thin">
-                        About us <br /> 
-                </div> 
+        <div class="bg-about bg-contain bg-no-repeat">
+                <header class="h-screen pt-20 text-9xl text-black font-thin">About us</header>
         </div>
 
 
         <Timeline horizontal={true}>
-            <div class="flex justify-start pt-20 pb-20">
+            <div class="flex justify-start pb-20">
                 <Timeline.Item>
                     <Timeline.Point/>
                     <svg class="w-6 h-6 p-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
@@ -152,7 +149,7 @@ export default function About() {
                     </div>
                     
 
-            <div class="grid-child8">
+            <div class="grid-child8 ">
                     <Card class="bg-gray-100 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Relationships
@@ -163,7 +160,7 @@ export default function About() {
                     </Card>
                 </div>
                 <div class="grid-child9">
-                    <Card class="bg-gray-100 mr-0 h-80">
+                    <Card class="bg-gray-200 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Results
                         </h5>
