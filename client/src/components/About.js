@@ -19,7 +19,7 @@ export default function About() {
         
         <>
         <div class="bg-about bg-cover bg-no-repeat bg-center">
-                <header class="h-screen pt-20 pl-20 text-9xl text-black font-thin">About us</header>
+                <header class="h-screen pt-10 pl-10 text-9xl text-black font-thin">About us</header>
         </div>
 
 
