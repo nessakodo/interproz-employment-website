@@ -13,15 +13,14 @@ export default function About() {
 
     return (
         <>
-        <div>
-            <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-                <div class="p-20 text-black bg-gray-300 bg-opacity-70 max-w-max text-left text-9xl">
-                Why Choose Excel? 
-                </div> 
-            </header>
+        <div class="bg-about bg-cover bg-no-repeat">
+                <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img"/>
         </div>
-        <h1>Why Choose Excel?</h1>
-        <Tabs.Group aria-label="Default tabs" style="default" >
+        <div class="p-20 text-7xl text-black bg-white bg-opacity-75">
+                        Why choose Excel? <br /> 
+                    </div> 
+        
+        <Tabs.Group aria-label="Default tabs"  >
             <Tabs.Item
                 active={true}
                 title="Focus"
@@ -38,13 +37,12 @@ export default function About() {
                 In order to make sure of constant progress and improvement, you need to be able to measure your results and the parameters of success that have been agreed upon. We pride ourselves on achieving results that benefit you!
             </Tabs.Item>
             <Tabs.Item
-                disabled={true}
                 title="Expertise"
             >
                 We have been providing exceptional, customized staffing fulfillment since 1992.
             </Tabs.Item>
         </Tabs.Group>
-
+        
         <h1>Excel Milestones</h1>
                 <Timeline>
                     <Timeline.Item>
@@ -54,7 +52,9 @@ export default function About() {
                             1987 
                         </Timeline.Time>
                         <Timeline.Title>
+                        <div class= "text-black">
                             Excel Personnel established in San Diego, CA
+                        </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>
@@ -65,7 +65,9 @@ export default function About() {
                             1992
                         </Timeline.Time>
                         <Timeline.Title>
-                            Expanded to service the Denver market & the Front Range
+                            <div class= "text-black">
+                                Expanded to service the Denver market & the Front Range
+                            </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>
@@ -76,7 +78,9 @@ export default function About() {
                             1992
                         </Timeline.Time>
                         <Timeline.Title>
-                            Denver established as corporate headquarters
+                            <div class= "text-black">
+                                Denver established as corporate headquarters
+                            </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>
@@ -87,7 +91,9 @@ export default function About() {
                             2002
                         </Timeline.Time>
                         <Timeline.Title>
-                            Five offices located in Denver area covering the entire Metro region
+                            <div class= "text-black">
+                                Five offices located in Denver area covering the entire Metro region
+                            </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>
@@ -98,7 +104,9 @@ export default function About() {
                             2004
                         </Timeline.Time>
                         <Timeline.Title>
-                            Relocated Corporate offices to the Denver Tech Center
+                            <div class= "text-black">
+                                Relocated Corporate offices to the Denver Tech Center
+                            </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>
@@ -109,7 +117,9 @@ export default function About() {
                             2007
                         </Timeline.Time>
                         <Timeline.Title>
-                            Nominated "Best Companies to Work for in Colorado"
+                            <div class= "text-black">
+                                Nominated "Best Companies to Work for in Colorado"
+                            </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>
@@ -120,7 +130,9 @@ export default function About() {
                             2022
                         </Timeline.Time>
                         <Timeline.Title>
-                            Celebrated 30 years in Denver Metro region
+                            <div class= "text-black">
+                                Celebrated 30 years in Denver Metro region
+                            </div>
                         </Timeline.Title>
                         </Timeline.Content>
                     </Timeline.Item>

@@ -46,7 +46,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
 
     return (
         <div>
-            <Navbar class="bg-grey mb-5 mt-5"
+            <Navbar class="bg-grey mb-5 mt-5 "
                 fluid={true}
                 rounded={true}
             >
@@ -127,16 +127,10 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                     <Navbar.Link href="./clients">
                         Clients
                     </Navbar.Link>
-                    {/* <Navbar.Link href="./jobs">
-                        Jobs
-                    </Navbar.Link> */}
-                    {/* <Navbar.Link href="./opportunities">
-                        Opportunities
-                    </Navbar.Link> */}
                 </Navbar.Collapse>
             </Navbar>
-            <div class='flex flex-col items-center'> 
-                <div className='absolute pt-20'>
+            <div class='flex flex-col items-center '> 
+                <div className='absolute pt-20 '>
             </div>
         </div>
     </div >
