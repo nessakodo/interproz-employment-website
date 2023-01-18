@@ -115,7 +115,7 @@ export default function Home () {
 
                 <section>
                     <div>
-                        <h1><span class="highlight-container"><span class="highlight">Companies who chose us</span></span></h1> 
+                        <h1>Companies who chose us</h1> 
                         <br />
                     </div>
                     <div class="skill-icons inline-grid grid-cols-5 gap-44 p-24 shrink">
@@ -280,8 +280,8 @@ export default function Home () {
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                 <div>
-                <img src={map_footer} class="mr-3 max-h-96 pr-16" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Conveniently located at I-25 and Thornton Pkwy, <br />our office is located just off of Grant St.</span>
+                <img src={map_footer} class="mr-3 mt-5 mb-10 max-h-96 pr-16" alt="Flowbite Logo"/>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> </span>
                 </div>
                     <div className="grid grid-cols-2 gap-x-24 max-w-full mr-24 mt-10">
                         <div>
@@ -303,8 +303,8 @@ export default function Home () {
                     <div className="w-full sm:flex sm:items-center sm:justify-between">
                     <Footer.Copyright
                         href="#"
-                        by="Flowbite™"
-                        year={2022}/>
+                        by="Interproz™"
+                        year={2023}/>
         
                 </div>
             </div>
