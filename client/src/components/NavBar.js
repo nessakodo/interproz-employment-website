@@ -53,7 +53,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                 <Navbar.Brand href="/">
                     <img
                         src={icon}
-                        className="ml-5 mr-5 h-6 mt-0 sm:h-12"
+                        className="ml-5 mr-5 h-6 mt-0 sm:h-14"
                         alt="Interproz"
                     />
                     {/* <span className=" self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -111,24 +111,25 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                     </div>)
                 }
 
-<div className="flex md:order-1 mr-24">
-                <Navbar.Collapse>
-                    <Navbar.Link
-                        href="/"
-                        active={true}
-                    >
-                        Home
-                    </Navbar.Link>
-                    <Navbar.Link href="./about" >
-                        About
-                    </Navbar.Link>
-                    <Navbar.Link href="./candidates">
-                        Candidates
-                    </Navbar.Link>
-                    <Navbar.Link href="./clients">
-                        Clients
-                    </Navbar.Link>
-                </Navbar.Collapse>
+                <div className="flex md:order-1 mr-24" > 
+                    <Navbar.Collapse>
+                        <Navbar.Link
+                            style={{ fontSize: "16px" }}   
+                            href="/"
+                            active={true}
+                        >
+                            Home
+                        </Navbar.Link>
+                        <Navbar.Link href="./about" style={{ fontSize: "16px" }} >
+                            About
+                        </Navbar.Link>
+                        <Navbar.Link href="./candidates" style={{ fontSize: "16px" }} >
+                            Candidates
+                        </Navbar.Link>
+                        <Navbar.Link href="./clients" style={{ fontSize: "16px" }} >
+                            Clients
+                        </Navbar.Link>
+                    </Navbar.Collapse>
                 </div>
             </Navbar>
             <div class='flex flex-col items-center'> 

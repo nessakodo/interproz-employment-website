@@ -88,10 +88,10 @@ export default function Home () {
                                     Candidates
                                 </h5>
                                 <p className="font-normal text-gray-700 dark:text-gray-800">
-                                    Excel Personnel has been providing expert recruiting services in Denver, CO for over three decades. We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed.
+                                Interproz connects qualified candidates with clients in need of interpretation services. We offer a wide range of opportunities for interpreters looking for work, and our team is dedicated to helping you find the perfect fit for your skills and experience. 
                                 </p>
-                                <Button type="button" onClick={onCandidatesClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                        Read more
+                                <Button type="button" onClick={onCandidatesClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
+                                        Read more &nbsp;
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                     </Button>
                             </Card>
@@ -103,10 +103,10 @@ export default function Home () {
                             Clients
                         </h5>
                         <p className="font-normal text-gray-700 dark:text-gray-800">
-                            We know staffing. Use our 30+ years of Denver recruiting and staffing services to your benefit. We are devoutly committed to developing a strong understanding of our clients’ business to continue providing each client with customized solutions to your talent needs.
+                        We specialize in providing qualified interpreters for legal, academic, advertising, medical and HR settings. Our team of experienced professionals are equipped to handle any situation, and we pride ourselves on providing the highest quality service to our clients.
                         </p>
-                            <Button type="button" onClick={onClientsClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                Read more
+                            <Button type="button" onClick={onClientsClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
+                                Read more &nbsp;
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </Button>
                     </Card>
@@ -147,23 +147,23 @@ export default function Home () {
                     </div>    
                 </section>
 
-        <div class="grid-container2">
-            <div class="grid-child3">
-                        <Card class="bg-gray-200 ml-0 h-80 ">
+        <div class="grid-container2 gap-4">
+            <div class="grid-child5">
+                        <Card class="bg-gray-200 ml-0 h-80">
                                 <h5 className="text-2xl font-bold tracking-tight ">
                                     Schedule an Interview
                                 </h5>
                                 <p className="font-normal text-gray-700 dark:text-gray-800">
                                     We work with thousands of associates every year, and we know what is important to you and how to get things done so you may succeed. 
                                 </p>
-                                <Button type="button" onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                <Button type="button" onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24" >
                                         {/* I'm ready to leap! */}
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                                     </Button>
                             </Card>
             </div>
 
-            <div class="grid-child4">
+            <div class="grid-child5">
                     <Card class="bg-gray-200 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Submit your Resume
@@ -179,7 +179,7 @@ export default function Home () {
             </div>
 
             <div class="grid-child5">
-                        <Card class="bg-gray-200 ml-0 h-80 ">
+                        <Card class="bg-gray-200 ml-0 h-80">
                                 <h5 className="text-2xl font-bold tracking-tight ">
                                     Job Opportunities
                                 </h5>
@@ -193,15 +193,80 @@ export default function Home () {
                             </Card>
             </div>
 
-            <div class="grid-child6">
+            <div class="grid-child5">
                     <Card class="bg-gray-200 mr-0 h-80">
                         <h5 className="text-2xl font-bold tracking-tight ">
-                            Who We Are
+                            Transcription
                         </h5>
                         <p className="font-normal text-gray-700 dark:text-gray-800">
-                            If you are looking for a partner with the best new job opportunities throughout the Denver area, you’ve found us. Welcome to Excel Personnel.
+                        The Interproz team takes your dictated or recorded material in Spanish and puts it into written form in English.    
                         </p>
                             <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                {/* Tell me more! */}
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                            </Button>
+                    </Card>
+                </div>
+        </div>
+
+
+
+{/* New grid */}
+        <div class="grid-container2">
+            <div class="grid-child5">
+                        <Card class="bg-gray-200 ml-0 h-80">
+                                <h5 className="text-2xl font-bold tracking-tight ">
+                                    Translation
+                                </h5>
+                                <p className="font-normal text-gray-700 dark:text-gray-800">
+                                Interproz professionals work exclusively on English to Spanish translations and Spanish to English translations.
+                                </p>
+                                <Button type="button" onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24" >
+                                        {/* I'm ready to leap! */}
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    </Button>
+                            </Card>
+            </div>
+
+            <div class="grid-child5">
+                    <Card class="bg-gray-200 mr-0 h-80">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Interpretation
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        At Interproz we specialize in English to Spanish interpretation and Spanish to English interpretation.
+                        </p>
+                            <Button type="button" onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                {/* Send it!  */}
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
+                            </Button>
+                    </Card>
+            </div>
+
+            <div class="grid-child5">
+                        <Card class="bg-gray-200 ml-0 h-80">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Transcription
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        The Interproz team takes your dictated or recorded material in Spanish and puts it into written form in English.    
+                        </p>
+                            <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
+                                {/* Tell me more! */}
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"></path></svg>
+                            </Button>
+                            </Card>
+            </div>
+
+            <div class="grid-child5">
+                    <Card class="bg-gray-200 mr-0 h-80">
+                        <h5 className="text-2xl font-bold tracking-tight ">
+                            Audio & Video Dub
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        The professionals at Interproz are active participants in the media community and highly experienced in the translation.
+                        </p>
+                            <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
                                 {/* Tell me more! */}
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                             </Button>
