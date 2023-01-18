@@ -147,7 +147,9 @@ export default function Home () {
                     </div>    
                 </section>
 
-        <div class="grid-container2 gap-4">
+                
+
+        <div class="grid-container2">
             <div class="grid-child5">
                         <Card class="bg-gray-200 ml-0 h-80">
                                 <h5 className="text-2xl font-bold tracking-tight ">
@@ -218,7 +220,7 @@ export default function Home () {
                                 <h5 className="text-2xl font-bold tracking-tight ">
                                     Translation
                                 </h5>
-                                <p className="font-normal text-gray-700 dark:text-gray-800">
+                                <p className="font-normal text-gray-700 dark:text-gray-800 mb-2">
                                 Interproz professionals work exclusively on English to Spanish translations and Spanish to English translations.
                                 </p>
                                 <Button type="button" onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24" >
@@ -233,7 +235,7 @@ export default function Home () {
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Interpretation
                         </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        <p className="font-normal text-gray-700 dark:text-gray-800 mb-2">
                         At Interproz we specialize in English to Spanish interpretation and Spanish to English interpretation.
                         </p>
                             <Button type="button" onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
@@ -248,7 +250,7 @@ export default function Home () {
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Transcription
                         </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        <p className="font-normal text-gray-700 dark:text-gray-800 mb-2">
                         The Interproz team takes your dictated or recorded material in Spanish and puts it into written form in English.    
                         </p>
                             <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
@@ -263,7 +265,7 @@ export default function Home () {
                         <h5 className="text-2xl font-bold tracking-tight ">
                             Audio & Video Dub
                         </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-800">
+                        <p className="font-normal text-gray-700 dark:text-gray-800 mb-2">
                         The professionals at Interproz are active participants in the media community and highly experienced in the translation.
                         </p>
                             <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-24">
