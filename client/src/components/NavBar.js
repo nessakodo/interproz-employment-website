@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Navbar, Dropdown } from 'flowbite-react'
-import icon from "../assets/as-icon.png"
+import icon from "../assets/interproz.png"
 import defaultpic from '../assets/profile-pic.webp'
 
 
@@ -53,16 +53,16 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                 <Navbar.Brand href="/">
                     <img
                         src={icon}
-                        className="ml-5 mr-5 h-6 sm:h-9"
-                        alt="Excel Personnel"
+                        className="ml-5 mr-5 h-6 mt-0 sm:h-12"
+                        alt="Interproz"
                     />
-                    <span className=" self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                        Excel Personnel
-                    </span>
+                    {/* <span className=" self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                        Interproz
+                    </span> */}
                 </Navbar.Brand>
             
                 {loggedIn ?
-                    (<div className="flex md:order-2">
+                    (<div className="flex md:order-2 mr-4">
                         <Dropdown
                             inline={true}
                             label={currentCandidate ? <img class='object-cover w-12 h-12 rounded-full border-2 border-gray-400' src={profPhoto.image_url} alt='' /> :
@@ -92,7 +92,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                         <Navbar.Toggle />
                     </div>)
                     :
-                    (<div className="flex md:order-2">
+                    (<div className="flex md:order-2 mr-4">
                         <Dropdown
                             arrowIcon={false}
                             inline={true}
@@ -100,7 +100,7 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                         >
                             <Dropdown.Header>
                                 <span className="block text-sm font-bold">
-                                Excel Personnel Portal
+                                Interproz Portal
                                 </span>
                             </Dropdown.Header>
                             <Dropdown.Item onClick={toLogin}>
@@ -111,14 +111,15 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                     </div>)
                 }
 
-                <Navbar.Collapse >
+<div className="flex md:order-1 mr-24">
+                <Navbar.Collapse>
                     <Navbar.Link
                         href="/"
                         active={true}
                     >
                         Home
                     </Navbar.Link>
-                    <Navbar.Link href="./about">
+                    <Navbar.Link href="./about" >
                         About
                     </Navbar.Link>
                     <Navbar.Link href="./candidates">
@@ -128,9 +129,10 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                         Clients
                     </Navbar.Link>
                 </Navbar.Collapse>
+                </div>
             </Navbar>
-            <div class='flex flex-col items-center '> 
-                <div className='absolute pt-20 '>
+            <div class='flex flex-col items-center'> 
+                <div className='absolute pt-20'>
             </div>
         </div>
     </div >

@@ -27,6 +27,7 @@ import tms from '../assets/logos/tms.png';
 import trelle from '../assets/logos/trelle.png';
 import uec from '../assets/logos/uec.png';
 import map_footer from '../assets/map_footer.jpeg';
+import interproz from "../assets/interproz-home.png";
 
 
 export default function Home () {
@@ -64,11 +65,18 @@ export default function Home () {
         <>
         <div class="bg-hero bg-cover bg-no-repeat">
                 <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-                    <div class="p-20 text-7xl text-black bg-gray-300 bg-opacity-75">
-                        EXCEL PERSONNEL <br /> 
-                        <div class="text-2xl pt-8">
-                            We specialize in Administration, Forklift, Packaging, Quality Control, Shipping & Receiving and Warehouse talent. 
-                        </div>
+                    <div class="p-20 text-7xl text-black bg-gray-200 bg-opacity-75">
+                        <img
+                        src={interproz}
+                        className="ml-0 h-0 sm:h-20 mb-10"
+                        alt="Interproz"
+                    />
+                        <h1 style={{ fontSize: "18px" }} className="ml-1">
+                        We are the premier group of Spanish/English interpreting professionals in Colorado, and pride in our ability to convey meaning--beyond simply lexical translation.
+                        <br></br>
+                        <br></br>
+                        Our business requires us to continuously interact between the English speaking world of the United States and that which lies south of the border.  We are trained to identify the cultural nuances in everything from slang to protocol – and that is what makes Interproz the right choice for you.
+                        </h1>
                     </div> 
                 </header>
         </div>
