@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom'
 
 
-import { Card, Button, Footer } from 'flowbite-react';
+import { Card, Button, Footer, Accordion } from 'flowbite-react';
 import wholefoods from '../assets/logos/wholefoods.png';
 import ball from '../assets/logos/ball.png';
 import fresca from '../assets/logos/fresca.png';
@@ -32,6 +32,13 @@ import translation from "../assets/translation.jpg";
 import interpretation from "../assets/interpretation.jpg";
 import transcription from "../assets/transcription.jpg";
 import audio from "../assets/audio.jpg";
+import ata from "../assets/logos/ata.png";
+import capi from "../assets/logos/capi.png";
+import cta from "../assets/logos/cta.png";
+import imia from "../assets/logos/imia.png";
+import najit from "../assets/logos/najit.png";
+import ncihc from "../assets/logos/ncihc.png";
+
 
 export default function Home () {
 
@@ -66,9 +73,10 @@ export default function Home () {
 
     return (
         <>
+        
         <div class="bg-hero bg-cover bg-no-repeat">
-                <header class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-                    <div class="p-20 text-7xl text-black bg-gray-200 bg-opacity-75">
+                <header class="flex items-center justify-center h-screen mb-0 bg-fixed bg-center bg-cover custom-img">
+                    <div class="p-20 text-7xl text-black bg-gray-100 bg-opacity-75">
                         <img
                         src={interproz}
                         className="ml-0 h-0 sm:h-20 mb-10"
@@ -84,119 +92,115 @@ export default function Home () {
                 </header>
         </div>
 
-        <div class="grid-container">
-            <div class="grid-child1">
-                        <Card class="bg-gray-200 ml-0 h-80 ">
-                                <h5 className="text-2xl font-bold tracking-tight ">
-                                    Candidates
-                                </h5>
-                                <p className="font-normal text-gray-700 dark:text-gray-800">
-                                Interproz connects qualified candidates with clients in need of interpretation services. We offer a wide range of opportunities for interpreters looking for work, and our team is dedicated to helping you find the perfect fit for your skills and experience. 
-                                </p>
-                                <Button type="button" onClick={onCandidatesClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                        Read more &nbsp;
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                    </Button>
-                            </Card>
-                    </div>
-
-            <div class="grid-child2">
-                    <Card class="bg-gray-100 mr-0 h-80">
-                        <h5 className="text-2xl font-bold tracking-tight ">
-                            Clients
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-800">
-                        We specialize in providing qualified interpreters for legal, academic, advertising, medical and HR settings. Our team of experienced professionals are equipped to handle any situation, and we pride ourselves on providing the highest quality service to our clients.
-                        </p>
-                            <Button type="button" onClick={onClientsClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-52">
-                                Read more &nbsp;
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                            </Button>
-                    </Card>
-                </div>
+        <section>
+                <div className="text-gray-700 text-center justify-center justify-self-center font-bold">
+            <h1 style={{ fontSize: "28px" }}>Professtional Affiliations</h1> 
+            <br />
         </div>
+                    <div class="skill-icons inline-grid grid-cols-3 gap-44 p-24 shrink">
+                        <div class="wf-icon"><img src={capi} alt="wholefoods logo"/></div>
+                        <div class="wf-icon"><img src={cta} alt="wholefoods logo"/></div>
+                        <div class="wf-icon"><img src={ata} alt="wholefoods logo"/></div>
 
-                <section>
-                    <div>
-                        <h1>Companies who chose us</h1> 
-                        <br />
-                    </div>
-                    <div class="skill-icons inline-grid grid-cols-5 gap-44 p-24 shrink">
-                        <div class="wf-icon"><img src={wholefoods} alt="wholefoods logo"/></div>
-                        <div class="ball-icon"><img src={ball} alt="ball logo"/></div>
-                        <div class="fresca-icon"><img src={fresca} alt="fresca logo"/></div>
-                        <div class="coors-icon"><img src={coors} alt="coors logo"/></div>
-                        <div class="cardinal-icon"><img src={cardinal} alt="cardinal logo"/></div>
-                        <div class="acme-icon"><img src={acme} alt="acme logo"/></div>
-                        <div class="aspen-icon"><img src={aspen} alt="aspen logo"/></div>
-                        <div class="bigo-icon"><img src={bigo} alt="bigo logo"/></div>
-                        <div class="bmc-icon"><img src={bmc} alt="bmc logo"/></div>
-                        <div class="brownss-icon"><img src={brownss} alt="brownss logo"/></div>
-                        <div class="cintas-icon"><img src={cintas} alt="cintas logo"/></div>
-                        <div class="dmco-icon"><img src={dmco} alt="dmco logo"/></div>
-                        <div class="empire-icon"><img src={empire} alt="empire logo"/></div>
-                        <div class="forterra-icon"><img src={forterra} alt="forterra logo"/></div>
-                        <div class="jepp-icon"><img src={jepp} alt="jepp logo"/></div>
-                        <div class="liva-icon"><img src={liva} alt="liva logo"/></div>
-                        <div class="metal-icon"><img src={metal} alt="metal logo"/></div>
-                        <div class="napa-icon"><img src={napa} alt="napa logo"/></div>
-                        <div class="sorin-icon"><img src={sorin} alt="sorin logo"/></div>
-                        <div class="sund-icon"><img src={sund} alt="sund logo"/></div>
-                        <div class="tms-icon"><img src={tms} alt="tms logo"/></div>
-                        <div class="trelle-icon"><img src={trelle} alt="trelle logo"/></div>
-                        <div class="uec-icon"><img src={uec} alt="uec logo"/></div>
-
-
-                    </div>    
+                        <div class="wf-icon"><img src={imia} alt="wholefoods logo"/></div>
+                        <div class="wf-icon"><img src={najit} alt="wholefoods logo"/></div>
+                        <div class="wf-icon"><img src={ncihc} alt="wholefoods logo"/></div>
+                        </div>    
                 </section>
 
 
+
+
+
+                   
+        <section>
+<div className="text-gray-700 text-center justify-center justify-self-center font-bold">
+            <h1 style={{ fontSize: "28px" }}>Connect With Us</h1> 
+            <br />
+        </div>
+<div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-0 justify-center col-span-2 justify-center justify-self-center mx-auto bg-white-100 ">
+<div className="max-w-full p-2" >
+  <Card imgSrc={translation} class="p-0 bg-gray-100 rounded-xl" >
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Candidates</h5>
+                    <p class="mb-1 font-normal text-gray-700"> Interproz connects qualified candidates with clients in need of interpretation services. We offer a wide range of opportunities for interpreters looking for work, and our team is dedicated to helping you find the perfect fit for your skills and experience. </p>
+                    <Button type="button" onClick={onCandidatesClick} class="mt-3 py-1 px-1 text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-0 py-0 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-36">
+                                        Read More &nbsp;
+                                        <svg class="w-5 h-5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </Button>
+  </Card>
+</div>      
+<div className="max-w-full p-2" >
+  <Card imgSrc={interpretation} class="p-0 bg-gray-100 rounded-xl" >
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Clients</h5>
+                    <p class="mb-1 font-normal text-gray-700"> We specialize in providing qualified interpreters for legal, academic, advertising, medical and HR settings. Our team of experienced professionals are equipped to handle any situation, and we pride ourselves on providing the highest quality service to our clients.</p>
+                    <Button type="button" onClick={onClientsClick} class="mt-3 py-1 px-1 text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-0 py-0 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-36">
+                                        Read More &nbsp;
+                                        <svg class="w-5 h-5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </Button>
+    </Card>
+                </div>
+      
+
+</div>
+</section>
+<br></br>
+
+    
+
+
+
+                <section>
+<div className="text-gray-700 text-center justify-center justify-self-center font-bold">
+            <h1 style={{ fontSize: "28px" }}>Join Our Team</h1> 
+            <br />
+        </div>
             <div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-2 justify-center col-span-2 justify-center justify-self-center mx-auto bg-white-100">
 
-                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-200">
+                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-100">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Schedule an Interview</h5>
-                    <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <Button type="button"  onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-42">
-                            Read more &nbsp;
+                    <p class="mb-3 font-normal text-gray-700">Join our team of qualified interpreters and connect with clients in need of your language expertise.</p>
+                    <Button type="button"  onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-62">
+                            Schedule an Interview &nbsp;
                         <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </Button>
                 </div>
-                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-200">
+                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-100">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Submit Your Resume</h5>
-                    <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <Button type="button"  onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-42">
-                            Read more &nbsp;
+                    <p class="mb-3 font-normal text-gray-700">Expand your interpreting opportunities and connect with new clients by submitting your resume today.</p>
+                    <Button type="button"  onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-62">
+                            Sumbit Your Resume &nbsp;
                         <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
                     </Button>
                 </div>
-                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-200">
+                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-100">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Job Opportunities</h5>
-                    <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <Button type="button" onClick={onOpportunitiesClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-42">
-                            Read more &nbsp;
+                    <p class="mb-3 font-normal text-gray-700">Explore the job opportunities and openings available for qualified candidates, and take the next step in your interpreting career.</p>
+                    <Button type="button" onClick={onOpportunitiesClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-62">
+                            Explore Opportunities &nbsp;
                         <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"></path></svg>
                     </Button>
                 </div>
-                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-200">
+                <div class="max-w-full m-2 p-6 rounded-lg shadow-md bg-gray-100">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">About Us</h5>
-                    <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                    <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-42">
-                            Read more &nbsp;
+                    <p class="mb-3 font-normal text-gray-700">Learn about our mission and values, and discover why we are the best choice for professional interpreting services.</p>
+                    <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-62">
+                            Discover Our Mission &nbsp;
                             <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                     </Button>
                 </div>
             </div>      
+            </section>
 
-            
 
-        <div className="text-gray-700 text-center justify-center justify-self-center font-bold">
+                   
+            <section>
+<div className="text-gray-700 text-center justify-center justify-self-center font-bold">
             <h1 style={{ fontSize: "28px" }}>Our Specialties</h1> 
             <br />
         </div>
-<section>
 <div class="grid grid-cols-[repeat(auto-fit,_25%)] m-auto p-0 justify-center col-span-4 justify-center justify-self-center mx-auto bg-white-100 ">
 <div className="max-w-sm p-2" >
-  <Card imgSrc={translation} class="p-0 bg-gray-200 rounded-xl" >
+  <Card imgSrc={translation} class="p-0 bg-gray-100 rounded-xl" >
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-800">
       Translation
     </h5>
@@ -206,7 +210,7 @@ export default function Home () {
   </Card>
 </div>      
 <div className="max-w-sm p-2" >
-  <Card imgSrc={interpretation} class="p-0 bg-gray-200 rounded-xl" >
+  <Card imgSrc={interpretation} class="p-0 bg-gray-100 rounded-xl" >
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-800">
       Interpretation
     </h5>
@@ -217,7 +221,7 @@ export default function Home () {
 </div>
       
 <div className="max-w-sm p-2" >
-  <Card imgSrc={transcription} class="p-0 bg-gray-200 rounded-xl" >
+  <Card imgSrc={transcription} class="p-0 bg-gray-100 rounded-xl" >
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-800">
       Transcription
     </h5>
@@ -228,7 +232,7 @@ export default function Home () {
 </div>
       
 <div className="max-w-sm p-2" >
-  <Card imgSrc={audio} class="p-0 bg-gray-200 rounded-xl" >
+  <Card imgSrc={audio} class="p-0 bg-gray-100 rounded-xl" >
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-800">
       Audio & Video Dub
     </h5>
@@ -241,6 +245,7 @@ export default function Home () {
 </section>
 <br></br>
 
+            
         <Footer container={true}>
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
