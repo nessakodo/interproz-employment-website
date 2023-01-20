@@ -20,9 +20,11 @@ Interproz is a staffing agency platform with opportunities for multilingual indi
 
 ## 𝘗𝘳𝘰𝘫𝘦𝘤𝘵 𝘋𝘦𝘭𝘪𝘷𝘦𝘳𝘢𝘣𝘭𝘦𝘴
 
-[ ] Model and institutionalize custom database schema and REST API with Active Record, Postgres, and Ruby on Rails
+[✔️] Model and institutionalize custom database schema and REST API with Active Record, Postgres, and Ruby on Rails
 
-[ ] Develop customized front-end modals, back-end routes and authentication permissions for both candidates and clients
+[✔️] Develop customized front-end modals, back-end routes and authentication permissions for both candidates and clients
+
+[✔️] Authenticated users at login by encrypting identifying account information, allowing forgotten passwords to be reset
 
 ## 𝘈𝘶𝘵𝘩𝘰𝘳
 
