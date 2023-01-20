@@ -3,29 +3,6 @@ import { useHistory } from 'react-router-dom'
 
 
 import { Card, Button, Footer, Accordion } from 'flowbite-react';
-import wholefoods from '../assets/logos/wholefoods.png';
-import ball from '../assets/logos/ball.png';
-import fresca from '../assets/logos/fresca.png';
-import coors from '../assets/logos/coors.png';
-import cardinal from '../assets/logos/cardinal.png';
-import acme from '../assets/logos/acme.png';
-import aspen from '../assets/logos/aspen.png';
-import bigo from '../assets/logos/bigo.png';
-import bmc from '../assets/logos/bmc.png';
-import brownss from '../assets/logos/brownss.png';
-import cintas from '../assets/logos/cintas.png';
-import dmco from '../assets/logos/dmco.png';
-import empire from '../assets/logos/empire.png';
-import forterra from '../assets/logos/forterra.png';
-import jepp from '../assets/logos/jepp.png';
-import liva from '../assets/logos/liva.png';
-import metal from '../assets/logos/metal.png';
-import napa from '../assets/logos/napa.png';
-import sorin from '../assets/logos/sorin.png';
-import sund from '../assets/logos/sund.png';
-import tms from '../assets/logos/tms.png';
-import trelle from '../assets/logos/trelle.png';
-import uec from '../assets/logos/uec.png';
 import map_footer from '../assets/map_footer.jpeg';
 import interproz from "../assets/interproz-home.png";
 import translation from "../assets/translation.jpg";
@@ -71,7 +48,6 @@ export default function Home () {
         }
 
 
-    
 
     return (
         <>
@@ -85,10 +61,10 @@ export default function Home () {
                         alt="Interproz"
                     />
                         <h1 style={{ fontSize: "18px" }} className="ml-1">
-                        We are the premier group of Spanish/English interpreting professionals in Colorado, and pride in our ability to convey meaning--beyond simply lexical translation.
+                        𝘞𝘦 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘱𝘳𝘦𝘮𝘪𝘦𝘳 𝘨𝘳𝘰𝘶𝘱 𝘰𝘧 𝘚𝘱𝘢𝘯𝘪𝘴𝘩/𝘌𝘯𝘨𝘭𝘪𝘴𝘩 𝘪𝘯𝘵𝘦𝘳𝘱𝘳𝘦𝘵𝘪𝘯𝘨 𝘱𝘳𝘰𝘧𝘦𝘴𝘴𝘪𝘰𝘯𝘢𝘭𝘴 𝘪𝘯 𝘊𝘰𝘭𝘰𝘳𝘢𝘥𝘰, 𝘢𝘯𝘥 𝘱𝘳𝘪𝘥𝘦 𝘪𝘯 𝘰𝘶𝘳 𝘢𝘣𝘪𝘭𝘪𝘵𝘺 𝘵𝘰 𝘤𝘰𝘯𝘷𝘦𝘺 𝘮𝘦𝘢𝘯𝘪𝘯𝘨--𝘣𝘦𝘺𝘰𝘯𝘥 𝘴𝘪𝘮𝘱𝘭𝘺 𝘭𝘦𝘹𝘪𝘤𝘢𝘭 𝘵𝘳𝘢𝘯𝘴𝘭𝘢𝘵𝘪𝘰𝘯.
                         <br></br>
                         <br></br>
-                        Our business requires us to continuously interact between the English speaking world of the United States and that which lies south of the border.  We are trained to identify the cultural nuances in everything from slang to protocol – and that is what makes Interproz the right choice for you.
+                        𝘖𝘶𝘳 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴 𝘳𝘦𝘲𝘶𝘪𝘳𝘦𝘴 𝘶𝘴 𝘵𝘰 𝘤𝘰𝘯𝘵𝘪𝘯𝘶𝘰𝘶𝘴𝘭𝘺 𝘪𝘯𝘵𝘦𝘳𝘢𝘤𝘵 𝘣𝘦𝘵𝘸𝘦𝘦𝘯 𝘵𝘩𝘦 𝘌𝘯𝘨𝘭𝘪𝘴𝘩 𝘴𝘱𝘦𝘢𝘬𝘪𝘯𝘨 𝘸𝘰𝘳𝘭𝘥 𝘰𝘧 𝘵𝘩𝘦 𝘜𝘯𝘪𝘵𝘦𝘥 𝘚𝘵𝘢𝘵𝘦𝘴 𝘢𝘯𝘥 𝘵𝘩𝘢𝘵 𝘸𝘩𝘪𝘤𝘩 𝘭𝘪𝘦𝘴 𝘴𝘰𝘶𝘵𝘩 𝘰𝘧 𝘵𝘩𝘦 𝘣𝘰𝘳𝘥𝘦𝘳.  𝘞𝘦 𝘢𝘳𝘦 𝘵𝘳𝘢𝘪𝘯𝘦𝘥 𝘵𝘰 𝘪𝘥𝘦𝘯𝘵𝘪𝘧𝘺 𝘵𝘩𝘦 𝘤𝘶𝘭𝘵𝘶𝘳𝘢𝘭 𝘯𝘶𝘢𝘯𝘤𝘦𝘴 𝘪𝘯 𝘦𝘷𝘦𝘳𝘺𝘵𝘩𝘪𝘯𝘨 𝘧𝘳𝘰𝘮 𝘴𝘭𝘢𝘯𝘨 𝘵𝘰 𝘱𝘳𝘰𝘵𝘰𝘤𝘰𝘭 – 𝘢𝘯𝘥 𝘵𝘩𝘢𝘵 𝘪𝘴 𝘸𝘩𝘢𝘵 𝘮𝘢𝘬𝘦𝘴 𝘐𝘯𝘵𝘦𝘳𝘱𝘳𝘰𝘻 𝘵𝘩𝘦 𝘳𝘪𝘨𝘩𝘵 𝘤𝘩𝘰𝘪𝘤𝘦 𝘧𝘰𝘳 𝘺𝘰𝘶.
                         </h1>
                     </div> 
                 </header>
@@ -96,7 +72,7 @@ export default function Home () {
 
         <section>
                 <div className="text-gray-700 text-center justify-center justify-self-center font-bold">
-            <h1 style={{ fontSize: "28px" }}>Professtional Affiliations</h1> 
+            <h1 style={{ fontSize: "28px" }}>Professional Affiliations</h1> 
             <br />
         </div>
                     <div class="skill-icons inline-grid grid-cols-3 gap-44 p-24 shrink">
