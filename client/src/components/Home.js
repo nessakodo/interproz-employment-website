@@ -38,6 +38,8 @@ import cta from "../assets/logos/cta.png";
 import imia from "../assets/logos/imia.png";
 import najit from "../assets/logos/najit.png";
 import ncihc from "../assets/logos/ncihc.png";
+import candidate from "../assets/candidate.jpg";
+import client from "../assets/client.jpg";
 
 
 export default function Home () {
@@ -120,7 +122,7 @@ export default function Home () {
         </div>
 <div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-0 justify-center col-span-2 justify-center justify-self-center mx-auto bg-white-100 ">
 <div className="max-w-full p-2" >
-  <Card imgSrc={translation} class="p-0 bg-gray-100 rounded-xl" >
+  <Card imgSrc={candidate} class="p-0 bg-gray-100 rounded-xl" >
   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Candidates</h5>
                     <p class="mb-1 font-normal text-gray-700"> Interproz connects qualified candidates with clients in need of interpretation services. We offer a wide range of opportunities for interpreters looking for work, and our team is dedicated to helping you find the perfect fit for your skills and experience. </p>
                     <Button type="button" onClick={onCandidatesClick} class="mt-3 py-1 px-1 text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-0 py-0 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-36">
@@ -130,7 +132,7 @@ export default function Home () {
   </Card>
 </div>      
 <div className="max-w-full p-2" >
-  <Card imgSrc={interpretation} class="p-0 bg-gray-100 rounded-xl" >
+  <Card imgSrc={client} class="p-0 bg-gray-100 rounded-xl" >
   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Clients</h5>
                     <p class="mb-1 font-normal text-gray-700"> We specialize in providing qualified interpreters for legal, academic, advertising, medical and HR settings. Our team of experienced professionals are equipped to handle any situation, and we pride ourselves on providing the highest quality service to our clients.</p>
                     <Button type="button" onClick={onClientsClick} class="mt-3 py-1 px-1 text-white bg-gray-700 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-0 py-0 mr-2 mb-2 dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-36">
