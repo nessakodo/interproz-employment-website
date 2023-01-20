@@ -60,7 +60,7 @@ export default function Home () {
                         className="ml-0 h-0 sm:h-20 mb-10"
                         alt="Interproz"
                     />
-                        <h1 style={{ fontSize: "18px" }} className="ml-1">
+                        <h1 style={{ fontSize: "20px" }} className="ml-1">
                         𝘞𝘦 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘱𝘳𝘦𝘮𝘪𝘦𝘳 𝘨𝘳𝘰𝘶𝘱 𝘰𝘧 𝘚𝘱𝘢𝘯𝘪𝘴𝘩/𝘌𝘯𝘨𝘭𝘪𝘴𝘩 𝘪𝘯𝘵𝘦𝘳𝘱𝘳𝘦𝘵𝘪𝘯𝘨 𝘱𝘳𝘰𝘧𝘦𝘴𝘴𝘪𝘰𝘯𝘢𝘭𝘴 𝘪𝘯 𝘊𝘰𝘭𝘰𝘳𝘢𝘥𝘰, 𝘢𝘯𝘥 𝘱𝘳𝘪𝘥𝘦 𝘪𝘯 𝘰𝘶𝘳 𝘢𝘣𝘪𝘭𝘪𝘵𝘺 𝘵𝘰 𝘤𝘰𝘯𝘷𝘦𝘺 𝘮𝘦𝘢𝘯𝘪𝘯𝘨--𝘣𝘦𝘺𝘰𝘯𝘥 𝘴𝘪𝘮𝘱𝘭𝘺 𝘭𝘦𝘹𝘪𝘤𝘢𝘭 𝘵𝘳𝘢𝘯𝘴𝘭𝘢𝘵𝘪𝘰𝘯.
                         <br></br>
                         <br></br>
