@@ -1,10 +1,12 @@
 # 𝙄𝙣𝙩𝙚𝙧𝙥𝙧𝙤𝙯
 
+## 𝘼𝙪𝙩𝙝𝙤𝙧: 𝙉𝙚𝙨𝙨𝙖 𝙆𝙤𝙙𝙤 - 𝙁𝙪𝙡𝙡 𝙎𝙩𝙖𝙘𝙠 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧
+
 ![interproz](/server/assets/demo-1.png)
 
 Interproz is a staffing agency platform with opportunities for multilingual individuals to explore available job openings as facilitated by Interproz administrators. Also provides methods of contact and inquiry forms for clients seeking services.
 
-## 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦𝘴/𝘍𝘳𝘢𝘮𝘦𝘸𝘰𝘳𝘬𝘴 𝘜𝘴𝘦𝘥
+## 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦𝘴 + 𝘍𝘳𝘢𝘮𝘦𝘸𝘰𝘳𝘬𝘴 𝘜𝘴𝘦𝘥
 
 ####
 ![Node](https://img.shields.io/badge/Node.js-b325ae?style=for-the-badge&logo=nodedotjs&logoColor=white)
@@ -26,9 +28,8 @@ Interproz is a staffing agency platform with opportunities for multilingual indi
 
 [✔️] Authenticated users at login by encrypting identifying account information, allowing forgotten passwords to be reset
 
-## 𝘈𝘶𝘵𝘩𝘰𝘳: 𝘕𝘦𝘴𝘴𝘢 𝘒𝘰𝘥𝘰 - 𝘍𝘶𝘭𝘭 𝘚𝘵𝘢𝘤𝘬 𝘚𝘰𝘧𝘵𝘸𝘢𝘳𝘦 𝘌𝘯𝘨𝘪𝘯𝘦𝘦𝘳
 
-## 𝘓𝘪𝘯𝘬𝘴
+## 𝘗𝘦𝘳𝘴𝘰𝘯𝘢𝘭 𝘓𝘪𝘯𝘬𝘴
 
 ####
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-b325ae?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nessakodo/)
