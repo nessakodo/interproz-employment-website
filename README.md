@@ -26,9 +26,7 @@ Interproz is a staffing agency platform with opportunities for multilingual indi
 
 [✔️] Authenticated users at login by encrypting identifying account information, allowing forgotten passwords to be reset
 
-## 𝘈𝘶𝘵𝘩𝘰𝘳
-
-# Nessa Kodo - Full Stack Software Engineer
+## 𝘈𝘶𝘵𝘩𝘰𝘳: 𝘕𝘦𝘴𝘴𝘢 𝘒𝘰𝘥𝘰 - 𝘍𝘶𝘭𝘭 𝘚𝘵𝘢𝘤𝘬 𝘚𝘰𝘧𝘵𝘸𝘢𝘳𝘦 𝘌𝘯𝘨𝘪𝘯𝘦𝘦𝘳
 
 ## 𝘓𝘪𝘯𝘬𝘴
 
