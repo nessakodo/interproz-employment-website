@@ -1,8 +1,8 @@
 # 𝙄𝙣𝙩𝙚𝙧𝙥𝙧𝙤𝙯
 
-## 𝘼𝙪𝙩𝙝𝙤𝙧: 𝙉𝙚𝙨𝙨𝙖 𝙆𝙤𝙙𝙤 - 𝙁𝙪𝙡𝙡 𝙎𝙩𝙖𝙘𝙠 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧
-
 ![interproz](/server/assets/demo-1.png)
+
+## 𝘼𝙪𝙩𝙝𝙤𝙧: 𝙉𝙚𝙨𝙨𝙖 𝙆𝙤𝙙𝙤 - 𝙁𝙪𝙡𝙡 𝙎𝙩𝙖𝙘𝙠 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧
 
 Interproz is a staffing agency platform with opportunities for multilingual individuals to explore available job openings as facilitated by Interproz administrators. Also provides methods of contact and inquiry forms for clients seeking services.
 
