@@ -28,7 +28,7 @@ Interproz is a staffing agency platform with opportunities for multilingual indi
 
 ## 𝘈𝘶𝘵𝘩𝘰𝘳
 
-Nessa Kodo - Full Stack Software Engineer
+# Nessa Kodo - Full Stack Software Engineer
 
 ## 𝘓𝘪𝘯𝘬𝘴
 
