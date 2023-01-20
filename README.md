@@ -36,3 +36,4 @@ Nessa Kodo - Full Stack Software Engineer
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-b325ae?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nessakodo/)
 [![Dev.to](https://img.shields.io/badge/dev.to-b325ae?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/nessakodo)
 [![Email](https://img.shields.io/badge/Gmail-b325ae?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nessakodo@gmail.com)
+[![NessaKodo.com](https://img.shields.io/badge/nessakodo.com-b325ae?style=for-the-badge&logo=About.me&logoColor=white)](https://www.nessakodo.com)
