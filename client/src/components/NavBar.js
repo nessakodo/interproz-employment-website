@@ -111,22 +111,22 @@ function NavBar({setJobsComp, profPhoto, loggedIn, setCurrentCandidate, currentC
                     </div>)
                 }
 
-                <div className="flex md:order-1 mr-24" > 
+                <div className="flex md:order-1 mr-24" id="nav" > 
                     <Navbar.Collapse>
                         <Navbar.Link
-                            style={{ fontSize: "16px" }}   
+                            style={{ fontSize: "16px",  color: "#5483BF" }}   
                             href="/"
-                            active={true}
+                            active={false}
                         >
                             Home
                         </Navbar.Link>
-                        <Navbar.Link href="./about" style={{ fontSize: "16px" }} >
+                        <Navbar.Link href="./about" style={{ fontSize: "16px",  color: "#5483BF" }} >
                             About
                         </Navbar.Link>
-                        <Navbar.Link href="./candidates" style={{ fontSize: "16px" }} >
+                        <Navbar.Link href="./candidates" style={{ fontSize: "16px",  color: "#5483BF" }} >
                             Candidates
                         </Navbar.Link>
-                        <Navbar.Link href="./clients" style={{ fontSize: "16px" }} >
+                        <Navbar.Link href="./clients" style={{ fontSize: "16px",  color: "#5483BF" }} >
                             Clients
                         </Navbar.Link>
                     </Navbar.Collapse>

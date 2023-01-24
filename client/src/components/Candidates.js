@@ -36,50 +36,51 @@ export default function Candidates() {
                
                 <div class="bg-join bg-cover bg-no-repeat bg-center">
                 <header class="h-screen">
-                    <h1 class="pt-10 pl-10 text-8xl text-gray-800">Join Our Team </h1>
+                    <h1 class="pt-16 pl-8 pb-3 text-8xl text-gray-800">Join Our Team </h1>
 
-        <p className="font-normal text-gray-700 dark:text-gray-800 pt-4 pr-96 mr-64 pl-2 text-lg"> <span class="italic">
+        <p className="font-normal text-gray-700 dark:text-gray-800 pt-4 pl-8 pr-96 pb-9 mr-96 text-xl"> <span class="italic">
         Connect with clients in need of your language expertise, utilize your language skills and make a real impact, and level up your career today.
         </span> </p>
 
-        <section>
+      
 
-        <div class="grid grid-cols-[repeat(auto-fit,_50%)] justify-center col-span-2 justify-center justify-self-center pr-10">
+        <div class="grid grid-cols-[repeat(auto-fit,_50%)] w-screen justify-center col-span-2 justify-center justify-self-center pr-6 pl-2">
 
-                <div class="max-w-full m-4 p-6 rounded-lg shadow-xl bg-gray-100">
-                        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-700">Schedule an Interview</h5>
-                    <p class="mb-1 font-normal text-gray-700 text-sm">Join our team of qualified interpreters and connect with clients in need of your language expertise.</p>
-                    <Button type="button"  onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
-                            Schedule an Interview &nbsp;
-                        <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    </Button>
-                </div>
+
+       
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-700">Submit Your Resume</h5>
-                    <p class="mb-1 font-normal text-gray-700 text-sm">Expand your interpreting opportunities and connect with new clients by submitting your resume today.</p>
-                    <Button type="button"  onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
-                            Sumbit Your Resume &nbsp;
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Submit Your Resume</h5>
+                    <p class="font-normal text-gray-700 text-lg mb-4">Expand your interpreting opportunities by submitting your resume today.</p>
+                    <Button type="button" onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
+                            <span  style={{ fontSize: "16px"}}>Sumbit Your Resume &nbsp;</span>
                         <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
                     </Button>
                 </div>
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-700">Job Opportunities</h5>
-                    <p class="mb-1 font-normal text-gray-700 text-sm">Explore the job opportunities and openings available for qualified candidates, and take the next step in your interpreting career.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Schedule an Interview</h5>
+                    <p class="font-normal text-gray-700 text-lg mb-4">Connect with clients in need of your language expertise and join our team today.</p>
+                    <Button type="button"  onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
+                            <span  style={{ fontSize: "16px"}}>Schedule an Interview &nbsp;</span>
+                        <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
+                    </Button>
+                </div>
+                <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Job Opportunities</h5>
+                    <p class="font-normal text-gray-700 text-lg mb-4">Explore the job opportunities available for qualified candidates at Interproz.</p>
                     <Button type="button" onClick={onOpportunitiesClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
-                            Explore Opportunities &nbsp;
+                            <span  style={{ fontSize: "16px"}}>Explore Opportunities &nbsp;</span>
                         <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"></path></svg>
                     </Button>
                 </div>
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-700">About Us</h5>
-                    <p class="mb-1 font-normal text-gray-700 text-sm">Learn about our mission and values, and discover why we are the best choice for professional interpreting services.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">About Us</h5>
+                    <p class="font-normal text-gray-700 text-lg mb-4">Learn why Interproz is the best choice for professional interpreting services.</p>
                     <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
-                            Discover Our Mission &nbsp;
+                            <span  style={{ fontSize: "16px"}}>Discover Our Mission &nbsp;</span>
                             <svg class="w-6 h-6 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                     </Button>
                 </div>
             </div>     
-            </section>
                             </header>
                             </div>
                             

@@ -18,6 +18,12 @@ module.exports = {
       //   // Bounces 5 times 1s equals 5 seconds
       //   'bounce-short': 'bounce 1s ease-in-out 9'
       // }
+      borderRadius: {
+        sm: '0rem',
+        md: '0rem',
+        lg: '0rem',
+        xl: '0rem',
+      },
     
         backgroundImage: {
           'hero': "url('../src/assets/homepage_pic.jpg')",
