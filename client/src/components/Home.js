@@ -75,7 +75,23 @@ export default function Home () {
             <h5 style={{ fontSize: "28px" }}>Professional Affiliations</h5>
             <br />
         </div>
-                    <div class="skill-icons inline-grid grid-cols-3 gap-14 mt-12 pr-12 pl-12 pb-0 shrink">
+
+
+        <div class="skill-icons inline-grid grid-cols-6 mt-12 pb-0 shrink gap-12 m-4 p-4">
+
+<div class="imia-icon pb-0 pt-16"><img src={imia} alt="wholefoods logo"/></div>
+<div class="cta-icon pb-0 mb-12"><img src={cta} alt="wholefoods logo"/></div>
+
+<div class="ncihc-icon pb-0 pt-2"><img src={ncihc} alt="wholefoods logo"/></div>
+
+<div class="najit-icon pb-0 mb-36"><img src={najit} alt="wholefoods logo"/></div>
+<div class="capi-icon pb-0 pt-10"><img src={capi} alt="wholefoods logo"/></div>
+
+
+<div class="ata-icon pb-0 pt-12"><img src={ata} alt="wholefoods logo"/></div>
+
+</div>  
+                    {/* <div class="skill-icons inline-grid grid-cols-3 gap-14 mt-12 pr-12 pl-12 pb-0 shrink">
                         <div class="wf-icon pb-0 pr-20 pl-20 mt-4"><img src={capi} alt="wholefoods logo"/></div>
                         <div class="wf-icon pb-0 pr-20 pl-20"><img src={cta} alt="wholefoods logo"/></div>
                         <div class="wf-icon pb-0 pr-20 pl-20 mb-8"><img src={ata} alt="wholefoods logo"/></div>
@@ -83,7 +99,7 @@ export default function Home () {
                         <div class="wf-icon pb-0 pr-20 pl-20 mt-8"><img src={imia} alt="wholefoods logo"/></div>
                         <div class="wf-icon pb-0 pr-20 pl-20"><img src={najit} alt="wholefoods logo"/></div>
                         <div class="wf-icon pb-0 pr-20 pl-20 mb-56"><img src={ncihc} alt="wholefoods logo"/></div>
-                        </div>    
+                        </div>     */}
                 </section>
 
 
@@ -157,7 +173,7 @@ export default function Home () {
 
 
                    
-        <section>
+        <section>z
 <div className="text-gray-700 text-center justify-center justify-self-center font-bold">
             <h1 style={{ fontSize: "28px" }}>Connect With Us</h1> 
             <br />
