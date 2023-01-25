@@ -14,42 +14,172 @@ function Clients () {
 
   const [isClicked, setIsClicked] = useState(false);
 
-    const titleCard = (
+
+
+  const translationCard = (
+    <React.Fragment>
+        <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+            <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "90px", maxHeight: "90px"}}>
+                <div class="flex grid-cols-2 w-full o p-1">
+                  <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                    Audio & Video Dub
+                    </h5>
+                    <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                </div>
+            </Card>
+        </div>
+    </React.Fragment>
+);
+
+  const translationDescriptionCard = (
+    <React.Fragment>
+        <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+            <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "250px", maxHeight: "250px"}}>
+                <div class="flex grid-cols-2 w-full o p-1">
+                  <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                    Audio & Video Dub
+                  </h5>
+                    <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                </div>
+                <p className="font-normal text-gray-700 dark:text-gray-500">
+                    The professionals at Interproz are active participants in the media community and highly experienced in the translation, transcription, and trans-creation of advertising and entertainment material.  Whether you have a radio or TV spot, instructional video, podcast, webcast, infomercial, short film, or feature film – Interproz has the post-production knowledge to take your English audio or video material and cater it for the Spanish-speaking audience.  In trans-creation, we will take your English production and re-create it in Spanish with the corresponding effects, backgrounds, jingles, and style.
+                </p>
+            </Card>
+        </div>
+    </React.Fragment>
+);
+
+const interpretationCard = (
+  <React.Fragment>
+      <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+          <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "90px", maxHeight: "90px"}}>
+              <div class="flex grid-cols-2 w-full o p-1">
+                <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                  Audio & Video Dub
+                  </h5>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+              </div>
+          </Card>
+      </div>
+  </React.Fragment>
+);
+
+const interpretationDescriptionCard = (
+  <React.Fragment>
+      <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+          <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "250px", maxHeight: "250px"}}>
+              <div class="flex grid-cols-2 w-full o p-1">
+                <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                  Audio & Video Dub
+                </h5>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+              </div>
+              <p className="font-normal text-gray-700 dark:text-gray-500">
+                  The professionals at Interproz are active participants in the media community and highly experienced in the translation, transcription, and trans-creation of advertising and entertainment material.  Whether you have a radio or TV spot, instructional video, podcast, webcast, infomercial, short film, or feature film – Interproz has the post-production knowledge to take your English audio or video material and cater it for the Spanish-speaking audience.  In trans-creation, we will take your English production and re-create it in Spanish with the corresponding effects, backgrounds, jingles, and style.
+              </p>
+          </Card>
+      </div>
+  </React.Fragment>
+);
+
+const transcriptionCard = (
+  <React.Fragment>
+      <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+          <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "90px", maxHeight: "90px"}}>
+              <div class="flex grid-cols-2 w-full o p-1">
+                <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                  Audio & Video Dub
+                  </h5>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+              </div>
+          </Card>
+      </div>
+  </React.Fragment>
+);
+
+const transcriptionDescriptionCard = (
+  <React.Fragment>
+      <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+          <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "250px", maxHeight: "250px"}}>
+              <div class="flex grid-cols-2 w-full o p-1">
+                <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                  Audio & Video Dub
+                </h5>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+              </div>
+              <p className="font-normal text-gray-700 dark:text-gray-500">
+                  The professionals at Interproz are active participants in the media community and highly experienced in the translation, transcription, and trans-creation of advertising and entertainment material.  Whether you have a radio or TV spot, instructional video, podcast, webcast, infomercial, short film, or feature film – Interproz has the post-production knowledge to take your English audio or video material and cater it for the Spanish-speaking audience.  In trans-creation, we will take your English production and re-create it in Spanish with the corresponding effects, backgrounds, jingles, and style.
+              </p>
+          </Card>
+      </div>
+  </React.Fragment>
+);
+
+const localizationCard = (
+  <React.Fragment>
+      <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+          <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "90px", maxHeight: "90px"}}>
+              <div class="flex grid-cols-2 w-full o p-1">
+                <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                  Audio & Video Dub
+                  </h5>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+              </div>
+          </Card>
+      </div>
+  </React.Fragment>
+);
+
+const localizationDescriptionCard = (
+  <React.Fragment>
+      <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+          <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "250px", maxHeight: "250px"}}>
+              <div class="flex grid-cols-2 w-full o p-1">
+                <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                  Audio & Video Dub
+                </h5>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+              </div>
+              <p className="font-normal text-gray-700 dark:text-gray-500">
+                  The professionals at Interproz are active participants in the media community and highly experienced in the translation, transcription, and trans-creation of advertising and entertainment material.  Whether you have a radio or TV spot, instructional video, podcast, webcast, infomercial, short film, or feature film – Interproz has the post-production knowledge to take your English audio or video material and cater it for the Spanish-speaking audience.  In trans-creation, we will take your English production and re-create it in Spanish with the corresponding effects, backgrounds, jingles, and style.
+              </p>
+          </Card>
+      </div>
+  </React.Fragment>
+);
+
+    const audioCard = (
       <React.Fragment>
-                <div className="max-w-full max-h-100 p-4 pr-24 pl-24">
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}>
-    <div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-1 justify-center col-span-2 justify-center justify-self-center">
-    <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-      Audio & Video Dub
-    </h5>
-  <svg class="w-6 h-6 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
-  </div>
-    
-  </Card>
-
-
-</div>
+          <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+              <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "90px", maxHeight: "90px"}}>
+                  <div class="flex grid-cols-2 w-full o p-1">
+                    <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                      Audio & Video Dub
+                      </h5>
+                      <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                  </div>
+              </Card>
+          </div>
       </React.Fragment>
-    );
+);
 
-    const titleDescriptionCard = (
+    const audioDescriptionCard = (
       <React.Fragment>
-        <div className="max-w-full p-4 pr-24 pl-24">
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "70px", maxHeight: "70px"}}>
-    <div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-1 justify-center col-span-2 justify-center justify-self-center">
-    <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-      Audio & Video Dub
-    </h5>
-  <svg class="w-6 h-6 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
-  </div>
-    <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
-    Interproz delivers audio and video dubbing services in both English and Spanish, helping you to reach a wider audience with high-quality, seamless translations.
-
-    </p>
-  </Card>
-</div>
+          <div className="max-w-full max-h-100 p-4  pr-16 pl-20">
+              <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "250px", maxHeight: "250px"}}>
+                  <div class="flex grid-cols-2 w-full o p-1">
+                    <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+                      Audio & Video Dub
+                    </h5>
+                      <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                  </div>
+                  <p className="font-normal text-gray-700 dark:text-gray-500">
+                      The professionals at Interproz are active participants in the media community and highly experienced in the translation, transcription, and trans-creation of advertising and entertainment material.  Whether you have a radio or TV spot, instructional video, podcast, webcast, infomercial, short film, or feature film – Interproz has the post-production knowledge to take your English audio or video material and cater it for the Spanish-speaking audience.  In trans-creation, we will take your English production and re-create it in Spanish with the corresponding effects, backgrounds, jingles, and style.
+                  </p>
+              </Card>
+          </div>
       </React.Fragment>
-    );
+);
 
 
     return (
@@ -138,16 +268,22 @@ function Clients () {
             <br />
         </div>
 
+        {/* <div class="grid grid-cols-[repeat(auto-fit,_20%)] m-auto pb-20 pr-3 pl-3 justify-center col-span-4 justify-center justify-self-center mx-auto bg-white-100 "> */}
         <React.Fragment>
         <div>
           <div
             
             onClick={() => setIsClicked(!isClicked)}
           >
-            {isClicked ? titleCard : titleDescriptionCard}
+            {isClicked ? translationCard : translationDescriptionCard}
+            {isClicked ? interpretationCard : interpretationDescriptionCard}
+            {isClicked ? transcriptionCard : transcriptionDescriptionCard}
+            {isClicked ? localizationCard : localizationDescriptionCard}
+            {isClicked ? audioCard : audioDescriptionCard}
           </div>
         </div>
       </React.Fragment>
+      {/* </div> */}
         
 
 
