@@ -12,7 +12,13 @@ import audio from "../assets/audio.jpg";
 
 function Clients () {
 
-  const [isClicked, setIsClicked] = useState(false);
+
+
+  const [translationClicked, setTranslationClicked] = useState(false);
+  const [interpretationClicked, setInterpretationClicked] = useState(false);
+  const [transcriptionClicked, setTranscriptionClicked] = useState(false);
+  const [localizationClicked, setLocalizationClicked] = useState(false);
+  const [audioClicked, setAudioClicked] = useState(false);
 
 
 
@@ -268,30 +274,58 @@ const localizationDescriptionCard = (
             <br />
         </div>
 
-        {/* <div class="grid grid-cols-[repeat(auto-fit,_20%)] m-auto pb-20 pr-3 pl-3 justify-center col-span-4 justify-center justify-self-center mx-auto bg-white-100 "> */}
         <React.Fragment>
         <div>
           <div
-            
-            onClick={() => setIsClicked(!isClicked)}
+            onClick={() => setTranslationClicked(!translationClicked)}
           >
-            {isClicked ? translationCard : translationDescriptionCard}
-            {isClicked ? interpretationCard : interpretationDescriptionCard}
-            {isClicked ? transcriptionCard : transcriptionDescriptionCard}
-            {isClicked ? localizationCard : localizationDescriptionCard}
-            {isClicked ? audioCard : audioDescriptionCard}
+            {translationClicked ? translationCard : translationDescriptionCard}
           </div>
         </div>
       </React.Fragment>
-      {/* </div> */}
-        
 
+      <React.Fragment>
+        <div>
+          <div
+            onClick={() => setInterpretationClicked(!interpretationClicked)}
+          >
+            {interpretationClicked ? interpretationCard : interpretationDescriptionCard}
+          </div>
+        </div>
+      </React.Fragment>  
+
+      <React.Fragment>
+        <div>
+          <div
+            onClick={() => setTranscriptionClicked(!transcriptionClicked)}
+          >
+            {transcriptionClicked ? transcriptionCard : transcriptionDescriptionCard}
+          </div>
+        </div>
+      </React.Fragment> 
+
+      <React.Fragment>
+        <div>
+          <div
+            onClick={() => setLocalizationClicked(!localizaionClicked)}
+          >
+            {localizationClicked ? localizationCard : localizationDescriptionCard}
+          </div>
+        </div>
+      </React.Fragment>  
+
+      <React.Fragment>
+        <div>
+          <div
+            onClick={() => setAudioClicked(!audioClicked)}
+          >
+            {audioClicked ? audioCard : audioDescriptionCard}
+          </div>
+        </div>
+      </React.Fragment>    
 
 <div class="flex justify-center items-center p-20 text-7xl text-black font-thin">
-  <h1>Your relationship with Excel Personnel yields many benefits to your business.
-    <br/><br/>
-  Our Partnership Services</h1>
-</div>
+  <h1>Your relationship with Excel Personnel yields many benefits to your business.<br /><br />Our Partnership Services..</h1></div>
 <div className="max-w-screen pr-8 pl-8 pb-20">
   <Card>
     <form className="flex flex-col gap-4">
