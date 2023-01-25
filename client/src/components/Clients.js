@@ -45,7 +45,7 @@ function Clients () {
                   <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
                     Translation
                   </h5>
-                    <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                    <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
                 </div>
                 <p className="font-normal text-gray-700 dark:text-gray-500">
                   Our team of professional translators specialize in delivering exceptional English to Spanish and Spanish to English translations. We understand the importance of effective and clear communication, and our goal is to ensure that your message is accurately conveyed in either language. We take pride in preserving the integrity of your original formatting and presentation style in the translation process. Our extensive experience encompasses a wide range of documents, including certificates, brochures, forms, manuals, books, radio and television scripts, website content, research, casework files, and many other types of written material.
@@ -78,7 +78,7 @@ const interpretationDescriptionCard = (
                 <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
                   Interpretation
                 </h5>
-                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
               </div>
               <p className="font-normal text-gray-700 dark:text-gray-500">
                 We specialize in English to Spanish interpretation and Spanish to English interpretation. We take spoken material in one language and convey it in the other, allowing our clients to exercise their specialty without the barrier of proficiency limitations. Our interpreters have considerable experience serving at judicial and workers compensation hearings, medical examinations, academic conferences, social services meetings, and functions in other professional fields. We perform simultaneous, consecutive, and sight interpretation as required. For congresses, conventions, and conferences with many participants, we use digital audio equipment with infrared technology.
@@ -111,7 +111,7 @@ const transcriptionDescriptionCard = (
                 <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
                   Transcription
                 </h5>
-                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
               </div>
               <p className="font-normal text-gray-700 dark:text-gray-500">
                 Whether it's dictations or recorded material in Spanish, our team of specialists expertly transcribe it into written form in English. Conversely, we take audio material in English and put it in written form in Spanish. Our transcription service is unique in that we do not rely on voice recognition software, ensuring that our clients receive accurate and reliable transcriptions every time. Our specialists will personally handle your transcription tasks, accurately capturing even the most nuanced or difficult-to-understand speech, giving you the confidence to use our transcriptions for any purpose you need. We work with various types of audio material, and you may send us your electronic files or provide us with a link.
@@ -144,7 +144,7 @@ const localizationDescriptionCard = (
                 <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
                   Localization
                 </h5>
-                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                  <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
               </div>
               <p className="font-normal text-gray-700 dark:text-gray-500">
                 Interproz offers you more than translation; we facilitate cultural adaptation for your product or service for specific Spanish-speaking regions or groups. As an example, an American company that offers staples and wants to export to Latin America must call the product “grapas” for Mexico and “grampas” for Argentina. “Grapa” in Argentina refers to an alcoholic beverage made from grapes. Our team of experts understands the importance of localization when it comes to labeling, marketing, and other key aspects of your business. Interproz has established partnerships in and is represented in various Spanish-speaking regions to help you adapt your product or service to the target culture.
@@ -177,7 +177,7 @@ const localizationDescriptionCard = (
                     <h5 className="w-full text-2xl tracking-tight text-gray-900 dark:text-gray-800">
                       Audio & Video Dub
                     </h5>
-                      <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                      <svg class="w-7 h-7 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
                   </div>
                   <p className="font-normal text-gray-700 dark:text-gray-500">
                     The professionals at Interproz are active participants in the media community and highly experienced in the translation, transcription, and trans-creation of advertising and entertainment material.  Whether you have a radio or TV spot, instructional video, podcast, webcast, infomercial, short film, or feature film – Interproz has the post-production knowledge to take your English audio or video material and cater it for the Spanish-speaking audience.  In trans-creation, we will take your English production and re-create it in Spanish with the corresponding effects, backgrounds, jingles, and style.
