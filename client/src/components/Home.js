@@ -9,6 +9,7 @@ import translation from "../assets/translation.jpg";
 import interpretation from "../assets/interpretation.jpg";
 import transcription from "../assets/transcription.jpg";
 import audio from "../assets/audio.jpg";
+import local from "../assets/local.jpg";
 import ata from "../assets/logos/ata.png";
 import capi from "../assets/logos/capi.png";
 import cta from "../assets/logos/cta.png";
@@ -95,8 +96,8 @@ export default function Home () {
             <br />
         </div>
   
-<div class="grid grid-cols-[repeat(auto-fit,_25%)] m-auto pb-20 pr-3 pl-3 justify-center col-span-4 justify-center justify-self-center mx-auto bg-white-100 ">
-<div className="max-w-sm p-4" >
+<div class="grid grid-cols-[repeat(auto-fit,_20%)] m-auto pb-20 pr-3 pl-3 justify-center col-span-4 justify-center justify-self-center mx-auto bg-white-100 ">
+<div className="max-w-sm p-2" >
   <Card imgSrc={translation} class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "470px", maxHeight: "470px"}}> 
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
       Translation
@@ -106,7 +107,7 @@ export default function Home () {
     </p>
   </Card>
 </div>      
-<div className="max-w-sm p-4" >
+<div className="max-w-sm p-2" >
   <Card imgSrc={interpretation} class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "470px", maxHeight: "470px"}}>
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
       Interpretation
@@ -117,13 +118,23 @@ export default function Home () {
   </Card>
 </div>
       
-<div className="max-w-sm p-4" >
+<div className="max-w-sm p-2" >
   <Card imgSrc={transcription} class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "470px", maxHeight: "470px"}}>
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
       Transcription
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
     The Interproz team skillfully transcribes your dictated or recorded material in Spanish, and converts it to written form in English with linguistic precision and natural fluency.
+    </p>
+  </Card>
+</div>
+<div className="max-w-sm p-2">
+  <Card imgSrc={local} class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "470px", maxHeight: "470px"}}>
+    <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+      Localization
+    </h5>
+    <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
+    We represent various Spanish-speaking regions to help facilitate cultural adaptation for your product or service for specific Spanish-speaking groups.
     </p>
   </Card>
 </div>
@@ -134,7 +145,7 @@ export default function Home () {
       Audio & Video Dub
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
-    Interproz delivers audio and video dubbing services in both English and Spanish, helping you to reach a wider audience with seamless translations of the highest quality.
+    Interproz delivers audio and video dubbing services in both English and Spanish, helping you to reach a wider audience with high-quality, seamless translations.
     </p>
   </Card>
 </div>

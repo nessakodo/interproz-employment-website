@@ -38,7 +38,7 @@ export default function Candidates() {
                 <header class="h-screen">
                     <h1 class="pt-16 pl-8 pb-3 text-8xl text-gray-800">Join Our Team </h1>
 
-        <p className="font-normal text-gray-700 dark:text-gray-800 pt-4 pl-8 pr-96 pb-9 mr-96 text-xl"> <span class="italic">
+        <p className="font-normal text-gray-700 dark:text-gray-800 pt-4 pl-8 pr-96 pb-8 mr-96 text-xl"> <span class="italic">
         Connect with clients in need of your language expertise, utilize your language skills and make a real impact, and level up your career today.
         </span> </p>
 
@@ -49,7 +49,7 @@ export default function Candidates() {
 
        
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Submit Your Resume</h5>
+                        <h5 class="mb-2 text-3xl tracking-tight text-gray-700">Submit Your Resume</h5>
                     <p class="font-normal text-gray-700 text-lg mb-4">Expand your interpreting opportunities by submitting your resume today.</p>
                     <Button type="button" onClick={onResumeClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
                             <span  style={{ fontSize: "16px"}}>Sumbit Your Resume &nbsp;</span>
@@ -57,7 +57,7 @@ export default function Candidates() {
                     </Button>
                 </div>
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Schedule an Interview</h5>
+                        <h5 class="mb-2 text-3xl tracking-tight text-gray-700">Schedule an Interview</h5>
                     <p class="font-normal text-gray-700 text-lg mb-4">Connect with clients in need of your language expertise and join our team today.</p>
                     <Button type="button"  onClick={onInterviewClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
                             <span  style={{ fontSize: "16px"}}>Schedule an Interview &nbsp;</span>
@@ -65,7 +65,7 @@ export default function Candidates() {
                     </Button>
                 </div>
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">Job Opportunities</h5>
+                        <h5 class="mb-2 text-3xl tracking-tight text-gray-700">Job Opportunities</h5>
                     <p class="font-normal text-gray-700 text-lg mb-4">Explore the job opportunities available for qualified candidates at Interproz.</p>
                     <Button type="button" onClick={onOpportunitiesClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
                             <span  style={{ fontSize: "16px"}}>Explore Opportunities &nbsp;</span>
@@ -73,7 +73,7 @@ export default function Candidates() {
                     </Button>
                 </div>
                 <div class="max-w-full m-4 p-6 rounded-lg shadow-md bg-gray-100">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">About Us</h5>
+                        <h5 class="mb-2 text-3xl tracking-tight text-gray-700">About Us</h5>
                     <p class="font-normal text-gray-700 text-lg mb-4">Learn why Interproz is the best choice for professional interpreting services.</p>
                     <Button type="button" onClick={onAboutClick} class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
                             <span  style={{ fontSize: "16px"}}>Discover Our Mission &nbsp;</span>
