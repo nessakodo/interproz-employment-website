@@ -53,28 +53,28 @@ bg-hero {
   image-rendering: crisp-edges;
 }
 
-.wf-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
+.wf-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.8);}
 .wf-icon:hover { filter: grayscale(0); transform: scale(1) ;}
 
-.imia-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
+.imia-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.8);}
 .imia-icon:hover { filter: grayscale(0); transform: scale(1) ;}
 
 
-.ata-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
+.ata-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.8);}
 .ata-icon:hover { filter: grayscale(0); transform: scale(1) ;}
 
-.ncihc-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
+.ncihc-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.8);}
 .ncihc-icon:hover { filter: grayscale(0); transform: scale(1) ;}
 
-.capi-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
+.capi-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.8);}
 .capi-icon:hover { filter: grayscale(0); transform: scale(1) ;}
 
 
-.najit-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.6);}
-.najit-icon:hover { filter: grayscale(0); transform: scale(1) ;}
+.najit-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.6);}
+.najit-icon:hover { filter: grayscale(0); transform: scale(0.9) ;}
 
-.cta-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
-.cta-icon:hover { filter: grayscale(0); transform: scale(0.8) ;}
+.cta-icon { filter: grayscale(1) contrast(1); transition: transform .2s; transform: scale(0.8);}
+.cta-icon:hover { filter: grayscale(0); transform: scale(1.1) ;}
 
 section h1 {
   font-size: xx-large;
