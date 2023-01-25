@@ -15,10 +15,10 @@ function Clients () {
 
 
   const [translationClicked, setTranslationClicked] = useState(false);
-  const [interpretationClicked, setInterpretationClicked] = useState(false);
-  const [transcriptionClicked, setTranscriptionClicked] = useState(false);
-  const [localizationClicked, setLocalizationClicked] = useState(false);
-  const [audioClicked, setAudioClicked] = useState(false);
+  const [interpretationClicked, setInterpretationClicked] = useState(true);
+  const [transcriptionClicked, setTranscriptionClicked] = useState(true);
+  const [localizationClicked, setLocalizationClicked] = useState(true);
+  const [audioClicked, setAudioClicked] = useState(true);
 
 
 
@@ -307,7 +307,7 @@ const localizationDescriptionCard = (
       <React.Fragment>
         <div>
           <div
-            onClick={() => setLocalizationClicked(!localizaionClicked)}
+            onClick={() => setLocalizationClicked(!localizationClicked)}
           >
             {localizationClicked ? localizationCard : localizationDescriptionCard}
           </div>
