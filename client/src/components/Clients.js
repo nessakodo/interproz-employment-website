@@ -1,19 +1,56 @@
-import React from "react"
+import React, { useState } from "react"
 import { Footer, Card, Button, Checkbox, Label, TextInput, Accordion} from 'flowbite-react'
 import map_footer from '../assets/map_footer.jpeg';
+import AccordionBlock from "./AccordionBlock";
 import clients2 from '../assets/clients2.jpg';
 import translation from "../assets/translation.jpg";
 import interpretation from "../assets/interpretation.jpg";
 import transcription from "../assets/transcription.jpg";
 import local from "../assets/local.jpg";
 import audio from "../assets/audio.jpg";
-import { AccordionPanel } from "flowbite-react/lib/esm/components/Accordion/AccordionPanel";
-import { AccordionTitle } from "flowbite-react/lib/esm/components/Accordion/AccordionTitle";
 
 
-export default function Clients () {
+function Clients () {
 
-  
+  const [isClicked, setIsClicked] = useState(false);
+
+    const titleCard = (
+      <React.Fragment>
+                <div className="max-w-full max-h-100 p-4 pr-24 pl-24">
+  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}>
+    <div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-1 justify-center col-span-2 justify-center justify-self-center">
+    <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+      Audio & Video Dub
+    </h5>
+  <svg class="w-6 h-6 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+  </div>
+    
+  </Card>
+
+
+</div>
+      </React.Fragment>
+    );
+
+    const titleDescriptionCard = (
+      <React.Fragment>
+        <div className="max-w-full p-4 pr-24 pl-24">
+  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "70px", maxHeight: "70px"}}>
+    <div class="grid grid-cols-[repeat(auto-fit,_50%)] m-auto p-1 justify-center col-span-2 justify-center justify-self-center">
+    <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+      Audio & Video Dub
+    </h5>
+  <svg class="w-6 h-6 dark:text-white" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path></svg>
+  </div>
+    <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
+    Interproz delivers audio and video dubbing services in both English and Spanish, helping you to reach a wider audience with high-quality, seamless translations.
+
+    </p>
+  </Card>
+</div>
+      </React.Fragment>
+    );
+
 
     return (
         <>
@@ -100,8 +137,20 @@ export default function Clients () {
             <h5 style={{ fontSize: "28px" }}>Our Specialties</h5> 
             <br />
         </div>
-  
-     
+
+        <React.Fragment>
+        <div>
+          <div
+            
+            onClick={() => setIsClicked(!isClicked)}
+          >
+            {isClicked ? titleCard : titleDescriptionCard}
+          </div>
+        </div>
+      </React.Fragment>
+        
+
+
 <div className="w-screen pb-4 pl-20 pr-20 ">
   <Card
     class="bg-gray-100"
@@ -230,6 +279,8 @@ export default function Clients () {
 
 
 
+
+
             <Footer container={true}>
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
@@ -268,3 +319,5 @@ export default function Clients () {
     )
 
 };
+
+export default Clients;

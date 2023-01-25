@@ -56,9 +56,6 @@ bg-hero {
 .wf-icon { filter: grayscale(1) contrast(.7); transition: transform .2s; transform: scale(0.8);}
 .wf-icon:hover { filter: grayscale(0); transform: scale(1.5) ;}
 
-Accordion:active {
-  background-color: white;
-}
 
 section h1 {
   font-size: xx-large;
