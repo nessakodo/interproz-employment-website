@@ -8,6 +8,12 @@ import interpretation from "../assets/interpretation.jpg";
 import transcription from "../assets/transcription.jpg";
 import local from "../assets/local.jpg";
 import audio from "../assets/audio.jpg";
+import ata from "../assets/logos/ata.png";
+import capi from "../assets/logos/capi.png";
+import cta from "../assets/logos/cta.png";
+import imia from "../assets/logos/imia.png";
+import najit from "../assets/logos/najit.png";
+import ncihc from "../assets/logos/ncihc.png";
 
 
 function Clients () {
@@ -200,77 +206,100 @@ const localizationDescriptionCard = (
         </span> </p>
 
 
+  
+                    <div class="skill-icons inline-grid grid-cols-6 mt-12 pb-0 shrink gap-12 m-4 p-4">
+
+                        <div class="wf-icon pb-0 pt-16"><img src={imia} alt="wholefoods logo"/></div>
+                        <div class="wf-icon pb-0 mb-48"><img src={cta} alt="wholefoods logo"/></div>
+                        
+                        <div class="wf-icon pb-0 pt-2"><img src={ncihc} alt="wholefoods logo"/></div>
+
+                        <div class="najit-icon pb-0 mb-36"><img src={najit} alt="wholefoods logo"/></div>
+                        <div class="wf-icon pb-0 pt-12"><img src={capi} alt="wholefoods logo"/></div>
+                        
+
+                        <div class="wf-icon pb-0 pt-12"><img src={ata} alt="wholefoods logo"/></div>
+
+                        </div>  
+</header>
+            </div>
 
 
 
+            <div className="text-gray-700 text-center justify-center justify-self-center mb-0 pt-24">
+            <h5 style={{ fontSize: "28px" }}>Specialty Fields</h5> 
+            <br />
+        </div>
 
 
-        
-
-                  
-        <div class="grid grid-cols-[repeat(auto-fit,_20%)] m-auto pb-20 pr-3 pl-3 justify-center col-span-4 justify-center justify-self-center mx-auto bg-white-100 ">
-<div className="max-w-sm p-4" >
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}> 
+<div class="grid grid-cols-[repeat(auto-fit,_33%)] pl-12 pb-8 pt-12 m-auto justify-center col-span-3 justify-center justify-self-center mx-auto bg-white-100 ">
+<div className="max-w-md p-2" >
+  <Card imgSrc={translation} class="p-5 bg-gray-100 rounded-xl" style={{minHeight: "520px", maxHeight: "520px"}}> 
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-      Translation
+      Legal
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
     We specialize in providing precise and accurate translations between English and Spanish, ensuring your message is communicated effectively in either language.
     </p>
   </Card>
 </div>      
-<div className="max-w-sm p-4" >
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}>
+<div className="max-w-md p-4" >
+  <Card imgSrc={interpretation} class="p-5 bg-gray-100 rounded-xl" style={{minHeight: "520px", maxHeight: "520px"}}>
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-      Interpretation
+      Medical
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
-    Our interpreters provide seamless interpretation services in real-time, ensuring clear and efficient communication in both English and Spanish.
+    When it comes to medical interpretation and translation, trust the experts at Interproz. We adhere to strict ethical principles of accuracy and confidentiality to ensure the best possible outcome for you and your patients.
     </p>
   </Card>
 </div>
       
-<div className="max-w-sm p-4" >
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}>
+<div className="max-w-md p-4" >
+  <Card imgSrc={transcription} class="p-5 bg-gray-100 rounded-xl" style={{minHeight: "520px", maxHeight: "520px"}}>
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-      Transcription
+      Academic
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
-    The Interproz team skillfully transcribes your dictated or recorded material in Spanish, and converts it to written form in English with linguistic precision and natural fluency.
+    Interproz is the partner you can count on for all your academic interpreting and translation needs. From elementary to university level institutions, we have the experience and expertise to support your academic goals.
     </p>
   </Card>
 </div>
-
-<div className="max-w-sm p-4">
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}>
+<div className="max-w-md p-4">
+  <Card imgSrc={local} class="p-5 bg-gray-100 rounded-xl" style={{minHeight: "520px", maxHeight: "520px"}}>
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-     Localization
+      Advertising
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
-    
-    We represent various Spanish-speaking regions to help facilitate cultural adaptation for your product or service for specific Spanish-speaking groups.
+    At Interproz, we understand the importance of effectively communicating your ideas and passions across language barriers. As a leader in advertising translation services, we help you convey the value of your products and services to a global audience.
     </p>
   </Card>
-</div>      
-<div className="max-w-sm p-4">
-  <Card class="p-0 bg-gray-100 rounded-xl" style={{minHeight: "270px", maxHeight: "270px"}}>
+</div>
+      
+<div className="max-w-md p-4">
+  <Card imgSrc={audio} class="p-5 bg-gray-100 rounded-xl" style={{minHeight: "520px", maxHeight: "520px"}}>
     <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
-      Audio & Video Dub
+      Human Services
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
-    Interproz delivers audio and video dubbing services in both English and Spanish, helping you to reach a wider audience with high-quality, seamless translations.
-
+    Interproz is dedicated to providing interpreting and translation services for Child, Adolescent, and Family Services, Adult Protective Services, and Community Support Services. Trust us to support and empower your clients.
+    </p>
+  </Card>
+</div>
+<div className="max-w-md p-4">
+  <Card imgSrc={audio} class="p-5 bg-gray-100 rounded-xl" style={{minHeight: "520px", maxHeight: "520px"}}>
+    <h5 className="text-2xl tracking-tight text-gray-900 dark:text-gray-800">
+      Finance & Accounting
+    </h5>
+    <p className="font-normal text-gray-700 dark:text-gray-500 pb-10">
+    With experience working with Standard & Poor's and a deep understanding of financial terminology, we ensure your financial documents are translated with precision and accuracy.
     </p>
   </Card>
 </div>
 </div>
-
-</header>
-            </div>
 
            
             <div className="text-gray-700 text-center justify-center justify-self-center mb-12 pt-24">
-            <h5 style={{ fontSize: "28px" }}>Our Specialties</h5> 
+            <h5 style={{ fontSize: "28px" }}>Our Services</h5> 
             <br />
         </div>
 
@@ -325,48 +354,85 @@ const localizationDescriptionCard = (
       </React.Fragment>    
 
 <div class="flex justify-center items-center p-20 text-7xl text-black font-thin">
-  <h1>Your relationship with Excel Personnel yields many benefits to your business.<br /><br />Our Partnership Services..</h1></div>
-<div className="max-w-screen pr-8 pl-8 pb-20">
-  <Card>
-    <form className="flex flex-col gap-4">
-      <div>
-        <div className="mb-2 block">
-          <Label
-            htmlFor="email1"
-            value="Your email"
-          />
-        </div>
-        <TextInput
-          id="email1"
-          type="email"
-          placeholder="name@flowbite.com"
-          required={true}
-        />
-      </div>
-      <div>
-        <div className="mb-2 block">
-          <Label
-            htmlFor="password1"
-            value="Your password"
-          />
-        </div>
-        <TextInput
-          id="password1"
-          type="password"
-          required={true}
-        />
-      </div>
-      <div className="flex items-center gap-2">
-        <Checkbox id="remember" />
-        <Label htmlFor="remember">
-          Remember me
-        </Label>
-      </div>
-      <Button type="submit">
-        Submit
-      </Button>
-    </form>
-  </Card>
+  <h1>Experience professional and reliable translation and interpretation services with Interproz.
+  <br></br>
+  <br></br>
+  Get in touch with us today.
+  </h1></div>
+
+
+<div className="max-w-screen pr-20 pl-20 pb-20">
+<div className="flex flex-col gap-4">
+  <div>
+    <div className="mb-2 block">
+      <Label class="text-gray-800"
+        htmlFor="small"
+        value="Name / Business"
+      />
+    </div>
+    <TextInput class="text-gray-800 w-full"
+      id="small"
+      type="text"
+      sizing="sm"
+    />
+  </div>
+  <div>
+    <div className="mb-2 block">
+      <Label class="text-gray-800"
+        htmlFor="base"
+        value="Email"
+      />
+    </div>
+    <TextInput class="text-gray-800 w-full"
+      id="base"
+      type="text"
+      sizing="md"
+    />
+  </div>
+  <div>
+    <div className="mb-2 block">
+      <Label class="text-gray-800"
+        htmlFor="base"
+        value="Phone"
+      />
+    </div>
+    <TextInput class="text-gray-800 w-full"
+      id="base"
+      type="text"
+      sizing="md"
+    />
+  </div>
+  <div>
+    <div className="mb-2 block">
+      <Label class="text-gray-800"
+        htmlFor="base"
+        value="Subject"
+      />
+    </div>
+    <TextInput class="text-gray-800 w-full"
+      id="base"
+      type="text"
+      sizing="md"
+    />
+  </div>
+  <div>
+    <div className="mb-2 block">
+      <Label class="text-gray-800"
+        htmlFor="large"
+        value="Message"
+      />
+    </div>
+    <TextInput class="text-gray-800 w-full h-36 mb-8"
+      id="large"
+      type="text"
+      sizing="lg"
+    />
+  </div>
+</div>
+
+<Button type="button" class="text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm dark:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 w-50 ">
+                            <span  style={{ fontSize: "16px"}}>Send Message&nbsp;</span>
+                    </Button>
 </div>
 
 
