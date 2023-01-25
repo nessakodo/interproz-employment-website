@@ -221,7 +221,7 @@ export default function Clients () {
           Remember me
         </Label>
       </div>
-      <Button onClick={onClick} type="submit">
+      <Button type="submit">
         Submit
       </Button>
     </form>
