@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Footer, Card, Button, Checkbox, Label, TextInput, Accordion} from 'flowbite-react'
 import map_footer from '../assets/map_footer.jpeg';
 import AccordionBlock from "./AccordionBlock";
-import clients2 from '../assets/clients2.jpg';
+// import clients2 from '../assets/clients2.jpg';
 import translation from "../assets/translation.jpg";
 import interpretation from "../assets/interpretation.jpg";
 import transcription from "../assets/transcription.jpg";
