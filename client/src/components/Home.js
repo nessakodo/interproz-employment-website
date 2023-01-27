@@ -102,10 +102,6 @@ export default function Home () {
                         </div>    
                 </section>
 
-
-
-
-                   
                 <section>
 <div className="text-gray-700 text-center justify-center justify-self-center mb-12 mt-5 pt-0">
             <h5 style={{ fontSize: "28px" }}>Our Specialties</h5> 

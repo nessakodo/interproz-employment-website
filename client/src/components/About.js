@@ -33,7 +33,7 @@ export default function About() {
                         Established
                     </Timeline.Title>
                     <Timeline.Time>
-                        1997
+                        2011
                     </Timeline.Time>
                     <Timeline.Body class="font-medium">
                         Excel Personnel established in San Diego, CA
